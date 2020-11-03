@@ -247,15 +247,63 @@
                                     </colgroup>
                                     <thead>
                                         <tr>
-                                            <th>이미지</th>
-                                            <th>상품명</th>
+                                            <th>광고명</th>
                                             <th>등록 날짜</th>
-                                            <th>마일리지</th>
-                                            <th>상세</th>
+                                            <th>광고 유형</th>
+                                            <th>마일리지(광고단가)</th>
+                                            <th>마일리지(광고클릭시)</th>
+                                            <th>상태</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        
+                                        <tr>
+                                            <td>엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형이름</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>엄청난광고엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형이름</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle blue"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>엄청난광고엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle blue"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형이름</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle blue"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td>엄청난광고엄청난광고</td>
+                                            <td>2020.10.01</td>
+                                            <td>광고유형</td>
+                                            <td>1,000 포인트</td>
+                                            <td>500 포인트</td>
+                                            <td><div class="circle blue"></div></td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -265,6 +313,117 @@
                     <!-- col-6 end -->
                 </div>
                 <!-- row end -->
+                <div class="divider"></div>
+                <!-- row -->
+                <div class="row">
+                    <!-- col-6 모바일 시 12 -->
+                    <div class="col-md-6 col-12">
+                        <div class="pr-name flex-side">
+                            <div class="pr-main-title flex-box">
+                                <h3>사용자 유입량</h3>
+                                <div class="circle orange"></div>
+                                <p>사용자 수</p>
+                            </div>
+                            <select name="" id="">
+                                <option value="1">이번주</option>
+                                <option value="2">저번주</option>
+                            </select>
+                        </div>
+                        <div class="pr-name-sub">
+                            <p>날짜별 사용자 유입량입니다.</p>
+                        </div>
+                        <!-- chart -->
+                        <canvas id="userchart"></canvas>
+                        <!-- chart end -->
+                    </div>
+                    <!-- col-6 end -->
+                    <!-- col-6 모바일 시 12 -->
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="pr-list">
+                                <div class="pr-title flex-side">
+                                    <h3>상품 리스트</h3>
+                                    <a href="#">더보기</a>
+                                </div>
+                                <div class="pr-sub">
+                                    <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                                </div>
+                            </div>
+                            <!-- 테이블 -->
+                            <div class="pr-table">
+                                <table>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="34%">
+                                        <col width="17%">
+                                        <col width="17%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>이미지</th>
+                                            <th>상품명</th>
+                                            <th>등록 날짜</th>
+                                            <th>마일리지</th>
+                                            <th>상세</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr1.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr2.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr3.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr4.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr5.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- table end -->
+                        </div>
+                    </div>
+                    <!-- col-6 end -->
+                </div>
+                <!-- row end -->
+                <div class="divider"></div>
             </div>
         </div>
     </section>
@@ -357,4 +516,32 @@
             },
         } });
 </script>
+
+<script>
+    var ctx = document.getElementById('userchart');
+    var myChart = new Chart(ctx, {
+        type: 'bar', 
+        data: { 
+            labels: ['10.20', '10.21', '10.22', '10.23', '10.24', '10.25', '10.26'], 
+            datasets: [{ 
+                label: '# of Votes', 
+                data: [400, 500, 200, 400, 400, 300, 500], 
+                backgroundColor: [ '#D5D5D5', '#FF8200', '#D5D5D5', '#D5D5D5', '#D5D5D5', '#D5D5D5','#FF8200' ] }] 
+                },
+                
+                options: { 
+                    legend: {
+                        display: false
+                    },
+                    scales: { 
+                        yAxes: [{ 
+                            ticks: { 
+                                beginAtZero: true
+                                }
+                            }]
+                        },
+                    } 
+                });
+</script>
+
 </html>

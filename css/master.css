@@ -236,6 +236,20 @@ section>.container{
 
 
 /* 메인 화면 우측 구역 */
+.right-area > .row{
+    display: flex;
+    justify-content: space-between;
+}
+.right-area > .row > .col-md-6{
+    background: #fff;
+    border-radius: 5px;
+    width: 48%;
+    border: 1px solid #EBEBEB;
+    padding: 15px;
+}
+.pr-list{
+    height: 100%;
+}
 .pr-list .pr-title h3{
     font-size: 1.56em;
 }
@@ -285,6 +299,9 @@ section>.container{
 .pr-name-sub{
     margin: 10px 0 30px;
 }
+.pr-name-sub p{
+    color: #878787;
+}
 .circle{
     width: 11px;
     height: 11px;
@@ -302,6 +319,11 @@ section>.container{
     padding: 3px 5px;
 }
 
+
 .divider{
     margin: 2em 0;
+}
+
+.ad-wrap p{
+    color: #878787;
 }
