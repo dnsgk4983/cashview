@@ -4,4 +4,8 @@ $(function(){
         $(cash).removeClass('active');
         $(this).addClass('active');
     });
+
+    $('button.navbar-toggle').on('click',function(){
+        $('ul.navbar-nav').slideToggle();
+    });
 });
