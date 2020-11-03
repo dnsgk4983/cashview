@@ -1,0 +1,307 @@
+/* @import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo); */
+@font-face {
+    font-family: 'AppleSDGothicNeoB';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../css/fonts/AppleSDGothicNeoE.ttf');
+    src: url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.eot') format('embedded-opentype'), url('../css/fonts/AppleSDGothicNeoE.woff') format('woff'), url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.woff2') format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: Apple SD Gothic Neo; */
+}
+a{
+    text-decoration: unset !important;
+    color: inherit;
+}
+body{
+    font-family: 'AppleSDGothicNeoB' !important;
+}
+
+.header-nav{
+    width: 100%;
+    height: 89px;
+    background: #2E2E2E;
+    border-radius:unset;
+    border-bottom-left-radius: 22px;
+    display: flex;
+    align-items: center;
+}
+.header-nav>div{
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav>div>div{
+    padding-right: 10px;
+}
+.header-nav button{
+    width:92px;
+    height: 39px;
+    font-size:16px;
+    color: #2E2E2E;
+    font-weight: bold !important;
+}
+.header-nav button:first-child{
+    margin-right: 15px;
+    border: 1.5px solid #F6F6F6;
+    color: #F6F6F6;
+    background: transparent;
+}
+
+/* header-nav */
+section>.container{
+    padding-top: 20px;
+}
+.signup-box{
+    /* width: 700px; */
+    /* height: 782px; */
+    margin: 0 auto;
+    padding: 60px 10px;
+    background: #fff;
+    border: 1px solid #EBEBEB;
+}
+.signup-box>div{
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* signup-box */
+
+.form-group{
+    margin: 1.5em 0;
+}
+
+.form-group:first-child{
+    margin-bottom: 0;
+}
+
+.form-group label{
+    font-weight: 600;
+}
+.form-group input{
+    width: 100%;
+    border: none;
+    height: 2em;
+}
+.social-icon{
+    margin: 1em auto 0;
+}
+
+.find-info{
+    text-align: right;
+}
+.login_btn_wrap button{
+    width: 100%;
+    border: none;
+    height: 3em;
+    border-radius: 5px;
+}
+.login_btn{
+    background: orange;
+    color: #fff;
+    margin: 1em 0;
+}
+.register_btn{
+    background: #fff;
+    color: orange;
+    border: 2px solid orange !important;
+}
+.social_login{
+    text-align: center;
+    padding-top: 2em;
+}
+
+
+/* 1103 */
+.container-fluid.flex-box{
+    margin-top: 4em;
+}
+.row{
+    margin: 0;
+}
+.flex-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+}
+.home-header{
+    padding: 1em;
+}
+
+.left-area{
+    width: 20%;
+    height: auto;
+    background: #fff;
+}
+.right-area{
+    width: 80%;
+    height: auto;
+    background: #F6F6F6;
+    border-radius: 5px 0 0 0;
+}
+
+.left-area ul{
+    width: 90%;
+    margin: 0 auto;
+}
+.left-area li{
+
+    border-radius: 5px;
+}
+.left-area ul li.active{
+    background: #2E2E2E;
+}
+.left-area ul li.active p{
+    color: #fff;
+}
+.left-area ul li a{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.left-area ul li a:hover{
+    color: #2f2f2f;
+}
+
+.icon-box{
+    width: 24px;
+    height: 24px;
+    margin-right: .5em;
+}
+
+.tab-home .icon-box{
+    background-image: url(../img/icon/home_grey.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left-area li.active .tab-home .icon-box{
+    background-image: url(../img/icon/home.png)
+}
+
+.tab-info .icon-box{
+    background-image: url(../img/icon/login_grey.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left-area li.active .tab-info .icon-box{
+    background: url(../img/icon/login.png);
+}
+
+.tab-pr .icon-box{
+    background-image: url(../img/icon/product_grey.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left-area li.active .tab-pr .icon-box{
+    background-image: url(../img/icon/product.png);
+}
+
+.tab-ad .icon-box{
+    background-image: url(../img/icon/ad_grey.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left-area li.active .tab-ad .icon-box{
+    background-image: url(../img/icon/ad.png);
+}
+
+.logout{
+    margin-top: 100%;
+    margin-left: 1em;
+}
+.logout > a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.logout > a:hover {
+    color: #2E2E2E;
+}
+.left-area .logout .icon-box{
+    background-image: url(../img/icon/logout.png);
+    margin-right: 7px;
+}
+
+
+/* 메인 화면 우측 구역 */
+.pr-list .pr-title h3{
+    font-size: 1.56em;
+}
+.pr-list .pr-title a{
+    display: block;
+    background: #EBEBEB;
+    padding: 10px 15px;
+}
+.pr-list .pr-title a:hover{
+    color: #2E2E2E;
+}
+
+.pr-sub{
+    margin: 10px 0px 30px;
+}
+.pr-sub p{
+    color: #878787;
+}
+
+/* 테이블 */
+.pr-table{
+    font-size: 12px;
+}
+.pr-table table{
+    width: 100%;
+}
+
+.pr-table th{
+    color: #878787;
+    height: 2em;
+}
+
+.pr-table td{
+    height: 3em;
+}
+.pr-table th:nth-child(n+3):nth-child(-n+5),
+.pr-table td:nth-child(n+3):nth-child(-n+5){
+    text-align: center;
+}
+
+.pr-main-title h3{
+    font-size: 2em;
+}
+.pr-main-title p{
+    color: #878787;
+}
+.pr-name-sub{
+    margin: 10px 0 30px;
+}
+.circle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin: 0 .5em 0 .7em;
+    background: #ff8200;
+}
+.circle.blue{
+    background: #4C9EFF;
+}
+.pr-name select{
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    color: #878787;
+    padding: 3px 5px;
+}
+
+.divider{
+    margin: 2em 0;
+}

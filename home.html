@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="">
+    <meta property="og:description" content=""> 
+    <meta property="og:title" content="">
+    <!-- meta tag -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- css -->
+    <title>Cashview</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid">
+            <div class="home-header">
+                <div class="row">
+                    <div class="col-md-12 col-12 flex-side">
+                        <div class="header--logo">
+                            <a href="#">
+                                <img src="img/top_logo.png" alt="상단로고">
+                            </a>
+                        </div>
+                        <div class="header--mypage flex-box">
+                            <img src="img/icon/login_grey.png" alt="login">
+                            <p><span>홍길동</span>님, 안녕하세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <section>
+        <div class="container-fluid flex-side">
+            <div class="left-area">
+                <ul>
+                    <li class="active">
+                        <a href="#" class="tab-home">
+                            <div class="icon-box"></div>
+                            <p>홈</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab-info">
+                            <div class="icon-box"></div>
+                            <p>내 정보</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab-pr">
+                            <div class="icon-box"></div>
+                            <p>상품</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab-ad">
+                            <div class="icon-box"></div>
+                            <p>광고</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="logout">
+                    <a href="#">
+                        <div class="icon-box"></div>
+                        <p>캐시뷰 로그아웃</p>
+                    </a>
+                </div>
+            </div>
+            <!-- left area end -->
+            <!-- right area -->
+            <div class="right-area">
+                <!-- row -->
+                <div class="row">
+                    <!-- col-6 모바일 시 12 -->
+                    <div class="col-md-6 col-12">
+                        <div class="pr-name flex-side">
+                            <div class="pr-main-title flex-box">
+                                <h3>상품</h3>
+                                <div class="circle orange"></div>
+                                <p>상품판매량</p>
+                            </div>
+                            <select name="" id="">
+                                <option value="1">이번주</option>
+                                <option value="2">저번주</option>
+                            </select>
+                        </div>
+                        <div class="pr-name-sub">
+                            <p>날짜별 내 상품 판매랑 통계입니다.</p>
+                        </div>
+                        <!-- chart -->
+                        <canvas id="myChart"></canvas>
+                        <!-- chart end -->
+                    </div>
+                    <!-- col-6 end -->
+                    <!-- col-6 모바일 시 12 -->
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="pr-list">
+                                <div class="pr-title flex-side">
+                                    <h3>상품 리스트</h3>
+                                    <a href="#">더보기</a>
+                                </div>
+                                <div class="pr-sub">
+                                    <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                                </div>
+                            </div>
+                            <!-- 테이블 -->
+                            <div class="pr-table">
+                                <table>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="34%">
+                                        <col width="17%">
+                                        <col width="17%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>이미지</th>
+                                            <th>상품명</th>
+                                            <th>등록 날짜</th>
+                                            <th>마일리지</th>
+                                            <th>상세</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr1.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr2.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr3.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr4.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="img/pr5.png" alt="pr">
+                                            </td>
+                                            <td>엄청난상품엄청난상품엄청난상품</td>
+                                            <td>2020.10.01</td>
+                                            <td>1,000 포인트</td>
+                                            <td>상세보기</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- table end -->
+                        </div>
+                    </div>
+                    <!-- col-6 end -->
+                </div>
+                <!-- row end -->
+                <div class="divider"></div>
+                <!-- row -->
+                <div class="row">
+                    <!-- col-6 -->
+                    <div class="col-md-6 col-12">
+                        <div class="pr-name flex-side">
+                            <div class="pr-main-title flex-box">
+                                <h3>광고</h3>
+                                <div class="circle blue"></div>
+                                <p>시청 완료 수</p>
+                                <div class="circle"></div>
+                                <p>광고 시청 수</p>
+                            </div>
+                            <select name="" id="">
+                                <option value="1">이번주</option>
+                                <option value="2">저번주</option>
+                            </select>
+                        </div>
+                        <div class="pr-name-sub">
+                            <p>날짜별 광고 클릭 및 시청 완료 횟수의 통계입니다.</p>
+                        </div>
+                        <!-- chart -->
+                        <canvas id="second-chart"></canvas>
+                        <!-- chart end -->
+                    </div>
+                    <!-- col-6 end -->
+                    <!-- col-6 -->
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="pr-list">
+                                <div class="pr-title flex-side">
+                                    <div class="ad-wrap flex-box">
+                                        <h3>광고 리스트</h3>
+                                        <div class="circle blue"></div>
+                                        <p>등록완료</p>
+                                        <div class="circle"></div>
+                                        <p>신청</p>
+                                    </div>
+                                    <a href="#">더보기</a>
+                                </div>
+                                <div class="pr-sub">
+                                    <p>상세보기를 클릭해 더 많은 광고 리스트를 찾아보세요.</p>
+                                </div>
+                            </div>
+                            <!-- 테이블 -->
+                            <div class="pr-table">
+                                <table>
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="15%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="5%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>이미지</th>
+                                            <th>상품명</th>
+                                            <th>등록 날짜</th>
+                                            <th>마일리지</th>
+                                            <th>상세</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- table end -->
+                        </div>
+                    </div>
+                    <!-- col-6 end -->
+                </div>
+                <!-- row end -->
+            </div>
+        </div>
+    </section>
+    <!-- section -->
+    <footer>
+
+    </footer>
+    <!-- footer -->
+</body>
+
+<script>
+    var colors = ['#ff8200','#4C9EFF']
+    var ctx = document.getElementById('myChart').getContext('2d');
+
+    var chart = new Chart(ctx, { 
+        type: 'line', 
+    // 챠트를 그릴 데이타 
+        data: { 
+            labels: ['10.20', '10.20', '10.20', '10.20', '10.20', '10.20', '10.20'],
+            datasets: [{
+                label: "",
+                backgroundColor:'transparent', 
+                borderColor: '#FF8200',
+                data: [200, 300, 100, 400, 500, 400, 300],
+                
+            }
+        ]}, // 옵션 
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines:{
+                        color: 'rgba(0,0,0,0)',
+                        lineWidth:0,
+                        drawOnChartArea: false
+                    },
+                }],
+                xAxes: [{
+                    gridLines:{
+                        color: 'rgba(0,0,0,0)',
+                        lineWidth: 0
+                    }
+                }],
+            },
+    } });
+</script>
+
+<script>
+        var ctx1 = document.getElementById('second-chart').getContext('2d');
+
+        var chart1 = new Chart(ctx1, { 
+            type: 'line', 
+        // 챠트를 그릴 데이타 
+            data: { 
+                labels: ['10.20', '10.20', '10.20', '10.20', '10.20', '10.20', '10.20'],
+                datasets: [{
+                    label:"",
+                    backgroundColor:'transparent', 
+                    borderColor: '#FF8200',
+                    data: [100, 200, 0, 300, 350, 300, 200],
+                    pointBackgroundColor: 'transparent'
+                },
+                {   
+                    backgroundColor:'transparent',
+                    borderColor: '#4C9EFF',
+                    data: [300, 330, 300, 400, 450, 400, 360]
+                }
+            ]},
+             // 옵션 
+            options: {
+                legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines:{
+                        color: 'rgba(0,0,0,0)',
+                        lineWidth:0,
+                        drawOnChartArea: false
+                    },
+                }],
+                xAxes: [{
+                    gridLines:{
+                        color: 'rgba(0,0,0,0)',
+                        lineWidth: 0
+                    }
+                }],
+            },
+        } });
+</script>
+</html>
