@@ -6,6 +6,7 @@
     src: url('../css/fonts/AppleSDGothicNeoE.ttf');
     src: url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.eot') format('embedded-opentype'), url('../css/fonts/AppleSDGothicNeoE.woff') format('woff'), url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.woff2') format('woff2');
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -541,6 +542,7 @@ section>.container{
 }
 .info-box-wrap{
     width: 100%;
+    padding: 2em 1em;
 }
 .pr-list{
     height: 100%;
@@ -653,8 +655,34 @@ section>.container{
 .info-wrap input{
     width: 100%;
     margin-bottom: 1.75em;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 5px 5px;
 }
 
+.row.info-wrap .col-md-6{
+    padding: 0;
+}
+.mileage input{
+    width: 80%;
+    background: url(../img/icon/milleage.png)no-repeat;
+    background-position: 5px center;
+    padding-left: 30px;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.mileage .flex-box{
+    border-bottom: 1px solid #ebebeb;
+}
+.mileage button{
+    width: 20%;
+    padding: 10px 0;
+    background: #2E2E2E;
+    color: #fff;
+}
+.place-black input::placeholder{
+    color: #2E2E2E;
+}
 
 /* 미디어 쿼리 */
 @media(min-width:993px){
