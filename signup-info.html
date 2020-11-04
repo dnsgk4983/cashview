@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
     <!-- css -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- jquery -->
     <title>Cashview</title>
 </head>
 
@@ -104,5 +106,18 @@
 
     </footer>
     <!-- footer -->
+    <script>
+        $(function(){
+            $('.female-btn').on('click',function(){
+                $(this).css('border','2px solid #ff8200').css('color','#ff8200');
+                $('.male-btn').css('border','2px solid #b5b5b5').css('color','#b5b5b5');
+            });
+            $('.male-btn').on('click',function(){
+                $(this).css('border','2px solid #ff8200').css('color','#ff8200');
+                $('.female-btn').css('border','2px solid #b5b5b5').css('color','#b5b5b5');
+            });
+        });
+    </script>
+    <!-- 버튼이벤트 -->
 </body>
 </html>

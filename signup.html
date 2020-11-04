@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
     <!-- css -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- jquery -->
     <title>Cashview</title>
 </head>
 
@@ -60,8 +62,10 @@
                 </div>
                 <div class="col-sm-12 col-12 agree-wrap">
                    <div class="text-right agree">
-                    <img src="images/checkbox/checkoff.png" alt="비활성화 체크박스">
-                    캐시뷰 이용약관 동의
+                    <input name="checkbox_img" type="checkbox" id="checkbox_img1">
+                    <label for="checkbox_img1">
+                        <span>캐시뷰 이용약관 동의</span>
+                    </label>
                    </div>
                 </div>
                 <!-- 1st textarea -->
@@ -78,14 +82,18 @@
                 </div>
                 <div class="col-sm-12 col-12 agree-wrap">
                    <div class="text-right agree">
-                    <img src="images/checkbox/checkoff.png" alt="비활성화 체크박스">
-                    개인정보 처리방침 동의
+                    <input type="checkbox" id="checkbox_img2">
+                    <label for="checkbox_img2">
+                        <span>개인정보 처리방침 동의</span>
+                    </label>
                    </div>
                 </div>
                 <!-- 2nd textarea -->
                 <div class="col-sm-12 col-12 text-center agree all-agree">
-                    <img src="images/checkbox/checkoff.png" alt="비활성화 체크박스">
-                    약관 전체 동의
+                    <input type="checkbox" id="checkbox_img3">
+                    <label for="checkbox_img3">
+                        <span>약관 전체 동의</span>
+                    </label>
                 </div>
                 <!-- agree checkbox -->
             </div>
@@ -106,5 +114,28 @@
 
     </footer>
     <!-- footer -->
+    <script>
+        $(document).ready(function(){
+            $(function(){
+            $('.all-agree').on('click', function(){
+                $('.agree label').css('background','url(images/checkbox/checkon.png)');
+                $('.agree label').css('background-repeat','no-repeat');
+                $('.agree label').css('color','#4C9EFF');  
+                $(this).css('border-color','#4C9EFF');
+                $('.off-btn').removeClass('off-btn').addClass('active-btn');
+            });
+        });
+        $(function(){
+            $('.all-agree').off('click', function(){
+                $('.agree label').css('background','url(images/checkbox/checkoff.png)');
+                $('.agree label').css('background-repeat','no-repeat');
+                $('.agree label').css('color','#ccc');  
+                $(this).css('border-color','#ccc');
+                $('.off-btn').removeClass('off-btn').addClass('active-btn');
+            });
+        });
+        })
+    </script>
+    <!-- 전체동의버튼 이벤트 -->
 </body>
 </html>

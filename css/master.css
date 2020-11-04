@@ -390,6 +390,23 @@ section>.container{
     color: #B5B5B5;
 }
 
+@media (min-width:768px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding-left: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding-right: unset;
+    }
+}
+@media (max-width:767px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding: unset;
+        margin-top: 1.5em;
+    }
+}
 /* 이름 성별 btn */
 .signup-id .form-group{
     font-size: 15px;
@@ -406,6 +423,27 @@ section>.container{
     border-radius: 5px;
     padding: 1.9em 0;
 }
+/*  */
+input[type="checkbox"]{
+    display: none;
+}
+.agree>input[type=checkbox] + label { 
+    display: inline-block;  
+    cursor: pointer; 
+    line-height: 15px;     
+    padding-left: 22px;   
+    background: url('../images/checkbox/checkoff.png') no-repeat;   
+    }   
+.agree>input[type=checkbox]:checked + label {
+    background: url('../images/checkbox/checkon.png') no-repeat;
+    color: #4C9EFF;
+}
+.agree_active{
+    background: url('../images/checkbox/checkon.png') no-repeat;
+    color: #4C9EFF;
+    border-color: #4C9EFF;
+}
+/* 체크박스 수정 */
 
 /* 1103 */
 .container-fluid.flex-box{
@@ -716,6 +754,63 @@ section>.container{
 .find-id:hover{
     background: #ff8200;
 }
+
+/* 광고 페이지 */
+.ad-fluid{
+    padding: 0 5em;
+}
+
+.ad-fluid h3{
+    font-size: 1.875em;
+}
+.ad-app{
+    display: block;
+    padding: 1em 1.5em;
+    background: #ff8200;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* 광고 테이블 */
+.ad-wrap > ul.ad-th > li{
+    display: flex;
+    align-items: center;
+    padding: 1.65em 0;
+    border-bottom: 1px solid #EBEBEB;
+}
+.ad-wrap > ul.ad-td > li{
+    display: flex;
+    align-items: center;
+}
+.ad-num{
+    width: 8%;
+}
+.ad-title{
+    width: 15%;
+}
+.ad-register{
+    width: 9%;
+}
+.ad-mile{
+    width: 12%;
+}
+.ad-click{
+    width: 12%;
+}
+.ad-type{
+    width: 9%;
+}
+.ad-click-count{
+    width: 10%;
+}
+.ad-view-count{
+    width: 12%;
+}
+.ad-stat{
+    width: 8%;
+}
+
 
 /* 미디어 쿼리 */
 @media(min-width:993px){
