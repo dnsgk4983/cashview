@@ -140,12 +140,14 @@ section>.container{
     width: 20%;
     height: auto;
     background: #fff;
+    float: left;
 }
 .right-area{
     width: 80%;
     height: auto;
     background: #F6F6F6;
     border-radius: 5px 0 0 0;
+    float: left;
 }
 
 .left-area ul{
@@ -240,12 +242,15 @@ section>.container{
     display: flex;
     justify-content: space-between;
 }
-.right-area > .row > .col-md-6{
+.box-wrap{
     background: #fff;
     border-radius: 5px;
     width: 48%;
     border: 1px solid #EBEBEB;
     padding: 15px;
+}
+.info-box-wrap{
+    width: 100%;
 }
 .pr-list{
     height: 100%;
@@ -326,4 +331,96 @@ section>.container{
 
 .ad-wrap p{
     color: #878787;
+}
+
+.nav>li>a:hover{
+    background: #fff !important;
+    border-radius: 5px;
+    color: #2e2e2e;
+}
+
+.nav > li.active a{
+    background: #2E2E2E !important;
+    border-radius: 5px;
+}
+.nav > li.active a:hover{
+    background: #2E2E2E !important;
+    color: #fff;
+}
+
+.info-title{
+    font-size: 1.88em;
+    margin-bottom: 1em;
+}
+.info-wrap p{
+    font-size: .95em;
+}
+
+@media(min-width:993px){
+    .navbar-nav>li{
+        float: none;
+    }
+}
+@media(max-width:992px){
+    .row{
+        flex-direction: column;
+    }
+    .left-area{
+        width: 25%;
+        float: right;
+    }
+    .right-area{
+        width: 75%;
+    }
+    .col-12{
+        width: 100% !important;
+    }
+    section > .container-fluid{
+        flex-direction: row-reverse;
+    }
+    .navbar-toggle{
+        border: 1px solid #2E2E2E;
+    }
+    .navbar-toggle .icon-bar{
+        background: #2E2E2E;
+    }
+    .left-area ul{
+        display: none;
+        width: 100%;
+    }
+    .nav > li p{
+        font-size: .75em;
+    }
+    .navbar-nav>li{
+        float: none;
+    }
+    .navbar-toggle{
+        display: block !important;
+    }
+    .collapse{
+        display: inline-block;
+        visibility: inherit;
+    }
+    .navbar-collapse{
+        padding: 0;
+    }
+    .logout p{
+        font-size: .8em;
+    }
+    .pr-main-title h3{
+        font-size: 1.2em;
+    }
+    .pr-list .pr-title h3{
+        font-size: 1.2em;
+    }
+    .pr-main-title p, .ad-wrap p, .pr-name select{
+        font-size: .75em;
+    }
+    .pr-list .pr-title a{
+        font-size: .8em;
+        padding: 5px 10px;
+    }
+    .pr-table th, .pr-table td{
+        font-size: .8em;
+    }
 }
