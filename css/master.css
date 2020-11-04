@@ -6,26 +6,6 @@
     src: url('../css/fonts/AppleSDGothicNeoE.ttf');
     src: url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.eot') format('embedded-opentype'), url('../css/fonts/AppleSDGothicNeoE.woff') format('woff'), url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.woff2') format('woff2');
 }
-@font-face{
-    font-family:'AppleSDGothicNeoB';
-    src: url('../fonts/AnyConv.com__AppleSDGothicNeoB.eot');
-    src: url('../fonts/AnyConv.com__AppleSDGothicNeoB.woff2') format('woff2'),
-         url('../fonts/AnyConv.com__AppleSDGothicNeoB.woff') format('woff'),
-         url('../fonts/AnyConv.com__AppleSDGothicNeoB.otf') format('opentype'),
-         url('../fonts/AppleSDGothicNeoB.ttf') format('truetype');
-         font-weight: normal;
-         font-size: normal;
-    }
-@font-face{
-    font-family:'AppleSDGothicNeoM';
-    src: url('../fonts/AnyConv.com__AppleSDGothicNeoM.eot');
-    src: url('../fonts/AnyConv.com__AppleSDGothicNeoM.woff2') format('woff2'),
-         url('../fonts/AnyConv.com__AppleSDGothicNeoM.woff') format('woff'),
-         url('../fonts/AnyConv.com__AppleSDGothicNeoM.otf') format('opentype'),
-         url('../fonts/AppleSDGothicNeoM.ttf') format('truetype');
-         font-weight: normal;
-         font-size: normal;
-    }
 *{
     margin: 0;
     padding: 0;
@@ -409,23 +389,6 @@ section>.container{
     color: #B5B5B5;
 }
 
-@media (min-width:768px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding-left: unset;
-    }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding-right: unset;
-    }
-}
-@media (max-width:767px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding: unset;
-    }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding: unset;
-        margin-top: 1.5em;
-    }
-}
 /* 이름 성별 btn */
 .signup-id .form-group{
     font-size: 15px;
@@ -675,14 +638,25 @@ section>.container{
     color: #fff;
 }
 
+/* 내 정보 페이지 */
+
 .info-title{
     font-size: 1.88em;
     margin-bottom: 1em;
 }
 .info-wrap p{
-    font-size: .95em;
+    font-size: .94em;
+    color: #878787;
+    margin-bottom: .2em;
 }
 
+.info-wrap input{
+    width: 100%;
+    margin-bottom: 1.75em;
+}
+
+
+/* 미디어 쿼리 */
 @media(min-width:993px){
     .navbar-nav>li{
         float: none;
@@ -749,5 +723,23 @@ section>.container{
     }
     .pr-table th, .pr-table td{
         font-size: .8em;
+    }
+}
+
+@media (min-width:768px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding-left: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding-right: unset;
+    }
+}
+@media (max-width:767px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding: unset;
+        margin-top: 1.5em;
     }
 }
