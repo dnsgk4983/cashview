@@ -6,115 +6,442 @@
     src: url('../css/fonts/AppleSDGothicNeoE.ttf');
     src: url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.eot') format('embedded-opentype'), url('../css/fonts/AppleSDGothicNeoE.woff') format('woff'), url('../css/fonts/AnyConv.com__AppleSDGothicNeoE.woff2') format('woff2');
 }
+@font-face{
+    font-family:'AppleSDGothicNeoB';
+    src: url('../fonts/AnyConv.com__AppleSDGothicNeoB.eot');
+    src: url('../fonts/AnyConv.com__AppleSDGothicNeoB.woff2') format('woff2'),
+         url('../fonts/AnyConv.com__AppleSDGothicNeoB.woff') format('woff'),
+         url('../fonts/AnyConv.com__AppleSDGothicNeoB.otf') format('opentype'),
+         url('../fonts/AppleSDGothicNeoB.ttf') format('truetype');
+         font-weight: normal;
+         font-size: normal;
+    }
+@font-face{
+    font-family:'AppleSDGothicNeoM';
+    src: url('../fonts/AnyConv.com__AppleSDGothicNeoM.eot');
+    src: url('../fonts/AnyConv.com__AppleSDGothicNeoM.woff2') format('woff2'),
+         url('../fonts/AnyConv.com__AppleSDGothicNeoM.woff') format('woff'),
+         url('../fonts/AnyConv.com__AppleSDGothicNeoM.otf') format('opentype'),
+         url('../fonts/AppleSDGothicNeoM.ttf') format('truetype');
+         font-weight: normal;
+         font-size: normal;
+    }
 *{
     margin: 0;
     padding: 0;
-    /* font-family: Apple SD Gothic Neo; */
+}
+body{
+    background:#F6F6F6;
 }
 a{
     text-decoration: unset !important;
     color: inherit;
 }
-body{
-    font-family: 'AppleSDGothicNeoB' !important;
+a:hover{
+    color:unset;
+}
+button{
+    border:none;
+}
+.container-fluid{
+    padding: unset;
 }
 
 .header-nav{
     width: 100%;
-    height: 89px;
+    height: 5em;
+    padding: 0 3%;
     background: #2E2E2E;
     border-radius:unset;
-    border-bottom-left-radius: 22px;
+    border-bottom-left-radius: 1em;
     display: flex;
     align-items: center;
-}
-.header-nav>div{
-    padding: 0 50px;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
 }
-.header-nav>div>div{
-    padding-right: 10px;
+.header-btn{
+    display: flex;
 }
-.header-nav button{
-    width:92px;
-    height: 39px;
+.header-btn button{
     font-size:16px;
+    padding: .5em .2em;
     color: #2E2E2E;
-    font-weight: bold !important;
+    box-sizing: border-box;
+    font-family:'AppleSDGothicNeoB';
+}
+@media(min-width:500px){
+    .header-btn button{
+        width: 6em;
+    }
 }
 .header-nav button:first-child{
-    margin-right: 15px;
-    border: 1.5px solid #F6F6F6;
+    margin-right: 1em;
+    border: 1px solid #F6F6F6;
     color: #F6F6F6;
     background: transparent;
 }
 
 /* header-nav */
 section>.container{
-    padding-top: 20px;
+    padding: 4em 1em 6.5em;
 }
+@media (min-width:718px){
+    section>.container{
+        width: 700px;
+        padding: 4em 0em 6.5em;
+    }
+}
+/*  section-container */
 .signup-box{
-    /* width: 700px; */
-    /* height: 782px; */
-    margin: 0 auto;
-    padding: 60px 10px;
+    padding: 4em 1.5em;
     background: #fff;
     border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 .signup-box>div{
     margin: 0 auto;
-    /* display: flex;
-    justify-content: center; */
 }
 
 /* signup-box */
 
 .form-group{
     margin: 1.5em 0;
+    font-family:'AppleSDGothicNeoB';
 }
 
 .form-group:first-child{
-    margin-bottom: 0;
-}
-
-.form-group label{
-    font-weight: 600;
+    margin-top: 3.2em;
+    margin-bottom: 1em;
 }
 .form-group input{
     width: 100%;
     border: none;
-    height: 2em;
+    border-bottom: 1px solid #EBEBEB;
+    height: 2.5em;
 }
-.social-icon{
-    margin: 1em auto 0;
+.form-group input::placeholder{
+    color:#B5B5B5;
+    font-size:15px;
+    font-family:'AppleSDGothicNeoM';
 }
-
+/* input form */
 .find-info{
     text-align: right;
+    color: #878787;
+    padding: 0 2.5em;
+    font-size: 14px;
+    font-family:'AppleSDGothicNeoM';
+}
+.login_btn_wrap{
+    padding:0 2em;
 }
 .login_btn_wrap button{
     width: 100%;
+    line-height: 4em;
     border: none;
-    height: 3em;
     border-radius: 5px;
+    font-family:'AppleSDGothicNeoB';
 }
 .login_btn{
-    background: orange;
+    background: #FF8200;
     color: #fff;
-    margin: 1em 0;
+    margin: 1.3em 0 .6em;
 }
 .register_btn{
     background: #fff;
-    color: orange;
-    border: 2px solid orange !important;
+    color: #FF8200;
+    border: 2px solid #FF8200 !important;
+}
+/* login_btn_wrap */
+.social-icon{
+    margin: 1em auto 0;
 }
 .social_login{
     text-align: center;
     padding-top: 2em;
 }
+.social_login>p{
+    display: flex;
+    padding: 0 1.4em;
+    justify-content: space-between;
+    font-size:15px;
+    font-weight: 100;
+    color: #878787;
+    font-family:'AppleSDGothicNeoM';
+}
+.social_login>p::before{
+    display: inline-block;
+    width: 33%;
+    height: 1px;
+    background-color: #EBEBEB;
+    content: " ";
+    margin: 4px 2em 0 0;
+}
+.social_login>p::after{
+    display: inline-block;
+    width: 33%;
+    height: 1px;
+    background-color: #EBEBEB;
+    content: " ";
+    margin: 4px 0 0 2em;
+}
+@media(max-width:606px){
+    .social_login>p::before{
+        display: inline-block;
+        width: 25%;
+        height: 1px;
+        background-color: #EBEBEB;
+        content: " ";
+        margin: 4px 2em 0 0;
+    }
+    .social_login>p::after{
+        display: inline-block;
+        width: 25%;
+        height: 1px;
+        background-color: #EBEBEB;
+        content: " ";
+        margin: 4px 0 0 2em;
+    }
+}
+.social-icon>div{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2.5em;
+    justify-content: center;
+}
+/* social-icon */
 
+.signup-padding{
+    padding: 3.7em 3.1em;
+}
+.signup-padding h2{
+    font-size:23px;
+    font-family: 'appleSdGothicNeoB';    
+}
+.signup-padding h3{
+    font-size: 15px;
+    font-family: 'appleSdGothicNeoM';
+    margin-top: 1em ;
+    margin-bottom: 2.8em;
+    color: #747474;
+}
+/* signup title */
+.text-scroll-contain{
+    width:100%;
+    border: 1px solid #EBEBEB;
+    padding : 1.2em;
+    border-radius: 5px;
+    font-family: 'appleSdGothicNeoM';
+    font-size: 13px;
+    line-height: 24px;
+    color: #747474;
+}
+.text-scroll-contain>div{
+    width: 100%;
+    height: 11em;
+    overflow: auto;
+}
+/* textarea */
+.text-scroll-contain>div::-webkit-scrollbar{
+   border-radius: 5px;
+   background: #EBEBEB;
+   width:4px;
+}
+.text-scroll-contain>div::-webkit-scrollbar-thumb{
+    background:#878787;
+    border-radius:5px;
+    width: 100%;
+    height: 20px;
+}
+.text-scroll-contain>div::-ms-scrollbar{
+    border-radius: 5px;
+    background: #EBEBEB;
+    width:4px;
+ }
+.text-scroll-contain>div::-ms-scrollbar-thumb{
+    background:#878787;
+    border-radius:5px;
+    width: 100%;
+    height: 20px;
+}
+.text-scroll-contain>div::-o-scrollbar{
+    border-radius: 5px;
+    background: #EBEBEB;
+    width:4px;
+ }
+.text-scroll-contain>div::-o-scrollbar-thumb{
+    background:#878787;
+    border-radius:5px;
+    width: 100%;
+    height: 20px;
+}
+.text-scroll-contain>div::-moz-scrollbar{
+    border-radius: 5px;
+    background: #EBEBEB;
+    width:4px;
+ }
+.text-scroll-contain>div::-moz-scrollbar-thumb{
+    background:#878787;
+    border-radius:5px;
+    width: 100%;
+    height: 20px;
+}
+/* scrollbar */
+.agree{
+    font-size: 14px;
+    padding: 1em 0 1.5em ;
+    line-height:22px;
+    color: #878787;
+    font-family: 'appleSdGothicNeoM';
+}
+.agree>img{
+    margin-right:.1em;
+    cursor: pointer;
+}
+.agree-wrap{
+    padding: unset;
+}
+.all-agree{
+    width:100%;
+    border: 1px solid #EBEBEB;
+    padding : 1.4em !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* agree checkbox none active */
+.agree-active{
+    font-size: 14px;
+    padding: 1em 0 1.5em;
+    line-height:22px;
+    color: #4C9EFF;
+    font-family: 'appleSdGothicNeoM';
+}
+.agree-active>img{
+    margin-right:.1em;
+    cursor: pointer;
+}
+.agree-active.all-agree{
+    border: 1px solid #4C9EFF;
+}
+/* agree checkbox active */
+.off-btn{
+    width: 28.5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size:16px;
+    padding : 1.2em;
+    font-family: 'appleSdGothicNeoM';
+    color: #fff;
+    background:#B5B5B5;
+    border-radius: 4px;
+}
+/*none active btn*/
+.active-btn{
+    width: 28.5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size:16px;
+    padding : 1.2em;
+    font-family: 'appleSdGothicNeoM';
+    color: #fff;
+    background:#FF8200;
+    border-radius: 4px;
+}
+/* active btn */
+.btn-group{
+    display:flex;
+    justify-content: center
+}
+.btn-group button{
+    margin: unset;
+    margin-top: 2em;
+}
+.btn-group .off-btn{
+    margin-right: 1.2em;
+}
+/* btn-group */
+.signup-info-form .form-group{
+    font-size: 15px;
+    color: #878787;
+    margin-bottom: .8em;
+}
+.signup-info-form .form-group input{
+    height: 3em;
+}
+.signup-info-form .form-group:first-child{
+    margin-top: 2.6em;
+}
+@media(min-width:767px){
+    .signup-info-form .form-group:first-child{
+        margin-bottom: -1.5em;
+    }
+}
+
+/* signupinfo-form */
+.double-check-btn{
+    background-color:#edf5ff;
+    color: #4C9EFF;
+    font-size: 13px;
+    font-family: 'appleSdGothicNeoM';
+    position: relative;
+    text-align: center;
+    padding: .6em 1em;
+    bottom: 3.5em;
+    border-radius: 3px;
+}
+/* 중복체크버튼 */
+.gender-btn button{
+    width: 47%;
+    padding: .4em 0;
+    border-radius: 5px;
+    margin-top: .6em;
+    background-color: transparent;
+    font-size: 14px;
+}
+.male-btn{
+    border:2px solid #FF8200;
+    color: #FF8200;
+}
+.female-btn{
+    border:2px solid #B5B5B5;
+    color: #B5B5B5;
+}
+
+@media (min-width:768px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding-left: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding-right: unset;
+    }
+}
+@media (max-width:767px){
+    .signup-info-form .form-group .col-sm-6:first-child {
+        padding: unset;
+    }
+    .signup-info-form .form-group .col-sm-6:last-child {
+        padding: unset;
+        margin-top: 1.5em;
+    }
+}
+/* 이름 성별 btn */
+.signup-id .form-group{
+    font-size: 15px;
+    color: #878787;
+    margin-bottom: .8em;
+}
+/* 아이디 찾기 form */
+
+.find-value{
+    border: 2px solid #FF8200;
+    color: #FF8200;
+    font-size:18px;
+    font-family: 'appleSdGothicNeoM';
+    border-radius: 5px;
+    padding: 1.9em 0;
+}
 
 /* 1103 */
 .container-fluid.flex-box{
