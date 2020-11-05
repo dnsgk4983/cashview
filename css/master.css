@@ -348,7 +348,7 @@ ul{
 .ad-mile{
     width: 25%;
 }
-.ad-click{
+.ad-click-mile{
     width: 25%;
 }
 .ad-stat{
@@ -462,7 +462,7 @@ ul{
     .pr-day{
         display: none;
     }
-    .ad-day, .ad-click{
+    .ad-day, .ad-click-mile{
         display: none;
     }
 
