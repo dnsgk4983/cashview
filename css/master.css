@@ -1,4 +1,3 @@
-/* @import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo); */
 @font-face {
     font-family: 'AppleSDGothicNeoB';
     font-weight: 300;
@@ -11,900 +10,534 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background:#F6F6F6;
-}
-a{
-    text-decoration: unset !important;
-    color: inherit;
-}
-a:hover{
-    color:unset;
-}
-button{
-    border:none;
-}
-.container-fluid{
-    padding: unset;
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'AppleSDGothicNeoB';
 }
 
-.header-nav{
-    width: 100%;
-    height: 5em;
-    padding: 0 3%;
-    background: #2E2E2E;
-    border-radius:unset;
-    border-bottom-left-radius: 1em;
+a{
+    text-decoration: none !important;
+}
+
+li{
+    list-style: none;
+}
+
+p, h1, h2, h3{
+    margin-bottom: 0;
+    color: #2e2e2e;
+}
+
+.mg-b2{
+    margin-bottom: 2em;
+}
+.pd-b2{
+    padding-bottom: 2em !important;
+}
+.pd-b3{
+    padding-bottom: 3em;
+}
+
+.mg-l2p{
+    margin-left: 2px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+}
+.logo{
+    padding: 0 20px;
+}
+
+.login-content{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.login-text{
+    color:#ccc;
+}
+.name{
+    color:#000;
+    font-weight: 800;
+}
+.logo-bg{
+    background: #ccc;
+}
+.icon{
+    background: url(../img/icon/login_grey.png)#F6F6F6;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    background-position: center center;
+    width: 39px;
+    height: 39px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.login-text{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+/* header  nav */
+
+.layout{
+    display: flex;
+}
+
+.slde-nav{
+    width: 10%;
+    height: auto;
+    padding: 0 .85em;
+    /* height auto 로 무조건 변경 */
+}
+.content{
+    width: 90%;
+    height: auto;
+    /* height auto 로 무조건 변경 */
+    border-radius: 50px 0px 0px 0px;
+    background: #ccc;
+    /* 눈아파서 어둡게변경 추후에 f6f6f6로 변경 */
+    padding-top: 5em;
+}
+
+/* 왼쪽 네비 영역 */
+.slde-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.slde-nav li{
+    padding: .85em;
+    border-radius: 10px;
+}
+.slde-nav > ul > li > a{
+    display: flex;
+    align-items: center;
+    color: #878787;
+}
+
+.icon-box{
+    width: 25px;
+    height: 25px;
+    margin-right: 1em;
+}
+
+.logout a{
+    display: flex;
+    align-items: center;
+    color: #878787;
+}
+.logout span{
+    font-size: .95em;
+}
+.icon-box.home{
+    background: url(../img/icon/home_grey.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-box.info{
+    background: url(../img/icon/login_grey.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-box.pr{
+    background: url(../img/icon/product_grey.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-box.ad{
+    background: url(../img/icon/ad_grey.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-box.lg-out{
+    background: url(../img/icon/logout.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flex-side{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-btn{
-    display: flex;
-}
-.header-btn button{
-    font-size:16px;
-    padding: .5em .2em;
-    color: #2E2E2E;
-    box-sizing: border-box;
-    font-family:'AppleSDGothicNeoB';
-}
-@media(min-width:500px){
-    .header-btn button{
-        width: 6em;
-    }
-}
-.header-nav button:first-child{
-    margin-right: 1em;
-    border: 1px solid #F6F6F6;
-    color: #F6F6F6;
-    background: transparent;
-}
-
-/* header-nav */
-section>.container{
-    padding: 4em 1em 6.5em;
-}
-@media (min-width:718px){
-    section>.container{
-        width: 700px;
-        padding: 4em 0em 6.5em;
-    }
-}
-/*  section-container */
-.signup-box{
-    padding: 4em 1.5em;
-    background: #fff;
-    border: 1px solid #EBEBEB;
-    border-radius: 10px;
-    margin: 0 auto;
-}
-.signup-box>div{
-    margin: 0 auto;
-}
-
-/* signup-box */
-
-.form-group{
-    margin: 1.5em 0;
-    font-family:'AppleSDGothicNeoB';
-}
-
-.form-group:first-child{
-    margin-top: 3.2em;
-    margin-bottom: 1em;
-}
-.form-group input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #EBEBEB;
-    height: 2.5em;
-}
-.form-group input::placeholder{
-    color:#B5B5B5;
-    font-size:15px;
-    font-family:'AppleSDGothicNeoM';
-}
-/* input form */
-.find-info{
-    text-align: right;
-    color: #878787;
-    padding: 0 2.5em;
-    font-size: 14px;
-    font-family:'AppleSDGothicNeoM';
-}
-.login_btn_wrap{
-    padding:0 2em;
-}
-.login_btn_wrap button{
-    width: 100%;
-    line-height: 4em;
-    border: none;
-    border-radius: 5px;
-    font-family:'AppleSDGothicNeoB';
-}
-.login_btn{
-    background: #FF8200;
-    color: #fff;
-    margin: 1.3em 0 .6em;
-}
-.register_btn{
-    background: #fff;
-    color: #FF8200;
-    border: 2px solid #FF8200 !important;
-}
-/* login_btn_wrap */
-.social-icon{
-    margin: 1em auto 0;
-}
-.social_login{
-    text-align: center;
-    padding-top: 2em;
-}
-.social_login>p{
-    display: flex;
-    padding: 0 1.4em;
-    justify-content: space-between;
-    font-size:15px;
-    font-weight: 100;
-    color: #878787;
-    font-family:'AppleSDGothicNeoM';
-}
-.social_login>p::before{
-    display: inline-block;
-    width: 33%;
-    height: 1px;
-    background-color: #EBEBEB;
-    content: " ";
-    margin: 4px 2em 0 0;
-}
-.social_login>p::after{
-    display: inline-block;
-    width: 33%;
-    height: 1px;
-    background-color: #EBEBEB;
-    content: " ";
-    margin: 4px 0 0 2em;
-}
-@media(max-width:606px){
-    .social_login>p::before{
-        display: inline-block;
-        width: 25%;
-        height: 1px;
-        background-color: #EBEBEB;
-        content: " ";
-        margin: 4px 2em 0 0;
-    }
-    .social_login>p::after{
-        display: inline-block;
-        width: 25%;
-        height: 1px;
-        background-color: #EBEBEB;
-        content: " ";
-        margin: 4px 0 0 2em;
-    }
-}
-.social-icon>div{
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 2.5em;
-    justify-content: center;
-}
-/* social-icon */
-
-.signup-padding{
-    padding: 3.7em 3.1em;
-}
-.signup-padding h2{
-    font-size:23px;
-    font-family: 'appleSdGothicNeoB';    
-}
-.signup-padding h3{
-    font-size: 15px;
-    font-family: 'appleSdGothicNeoM';
-    margin-top: 1em ;
-    margin-bottom: 2.8em;
-    color: #747474;
-}
-/* signup title */
-.text-scroll-contain{
-    width:100%;
-    border: 1px solid #EBEBEB;
-    padding : 1.2em;
-    border-radius: 5px;
-    font-family: 'appleSdGothicNeoM';
-    font-size: 13px;
-    line-height: 24px;
-    color: #747474;
-}
-.text-scroll-contain>div{
-    width: 100%;
-    height: 11em;
-    overflow: auto;
-}
-/* textarea */
-.text-scroll-contain>div::-webkit-scrollbar{
-   border-radius: 5px;
-   background: #EBEBEB;
-   width:4px;
-}
-.text-scroll-contain>div::-webkit-scrollbar-thumb{
-    background:#878787;
-    border-radius:5px;
-    width: 100%;
-    height: 20px;
-}
-.text-scroll-contain>div::-ms-scrollbar{
-    border-radius: 5px;
-    background: #EBEBEB;
-    width:4px;
- }
-.text-scroll-contain>div::-ms-scrollbar-thumb{
-    background:#878787;
-    border-radius:5px;
-    width: 100%;
-    height: 20px;
-}
-.text-scroll-contain>div::-o-scrollbar{
-    border-radius: 5px;
-    background: #EBEBEB;
-    width:4px;
- }
-.text-scroll-contain>div::-o-scrollbar-thumb{
-    background:#878787;
-    border-radius:5px;
-    width: 100%;
-    height: 20px;
-}
-.text-scroll-contain>div::-moz-scrollbar{
-    border-radius: 5px;
-    background: #EBEBEB;
-    width:4px;
- }
-.text-scroll-contain>div::-moz-scrollbar-thumb{
-    background:#878787;
-    border-radius:5px;
-    width: 100%;
-    height: 20px;
-}
-/* scrollbar */
-.agree{
-    font-size: 14px;
-    padding: 1em 0 1.5em ;
-    line-height:22px;
-    color: #878787;
-    font-family: 'appleSdGothicNeoM';
-}
-.agree>img{
-    margin-right:.1em;
-    cursor: pointer;
-}
-.agree-wrap{
-    padding: unset;
-}
-.all-agree{
-    width:100%;
-    border: 1px solid #EBEBEB;
-    padding : 1.4em !important;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* agree checkbox none active */
-.agree-active{
-    font-size: 14px;
-    padding: 1em 0 1.5em;
-    line-height:22px;
-    color: #4C9EFF;
-    font-family: 'appleSdGothicNeoM';
-}
-.agree-active>img{
-    margin-right:.1em;
-    cursor: pointer;
-}
-.agree-active.all-agree{
-    border: 1px solid #4C9EFF;
-}
-/* agree checkbox active */
-.off-btn{
-    width: 28.5%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    font-size:16px;
-    padding : 1.2em;
-    font-family: 'appleSdGothicNeoM';
-    color: #fff;
-    background:#B5B5B5;
-    border-radius: 4px;
-}
-/*none active btn*/
-.active-btn{
-    width: 28.5%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2em;
-    font-size:16px;
-    padding : 1.2em;
-    font-family: 'appleSdGothicNeoM';
-    color: #fff;
-    background:#FF8200;
-    border-radius: 4px;
-}
-/* active btn */
-.btn-group{
-    display:flex;
-    justify-content: center
-}
-.btn-group button{
-    margin: unset;
-    margin-top: 2em;
-}
-.btn-group .off-btn{
-    margin-right: 1.2em;
-}
-/* btn-group */
-.signup-info-form .form-group{
-    font-size: 15px;
-    color: #878787;
-    margin-bottom: .8em;
-}
-.signup-info-form .form-group input{
-    height: 3em;
-}
-.signup-info-form .form-group:first-child{
-    margin-top: 2.6em;
-}
-@media(min-width:767px){
-    .signup-info-form .form-group:first-child{
-        margin-bottom: -1.5em;
-    }
-}
-
-/* signupinfo-form */
-.double-check-btn{
-    background-color:#edf5ff;
-    color: #4C9EFF;
-    font-size: 13px;
-    font-family: 'appleSdGothicNeoM';
-    position: relative;
-    text-align: center;
-    padding: .6em 1em;
-    bottom: 3.5em;
-    border-radius: 3px;
-}
-/* 중복체크버튼 */
-.gender-btn button{
-    width: 47%;
-    padding: .4em 0;
-    border-radius: 5px;
-    margin-top: .6em;
-    background-color: transparent;
-    font-size: 14px;
-}
-.male-btn{
-    border:2px solid #FF8200;
-    color: #FF8200;
-}
-.female-btn{
-    border:2px solid #B5B5B5;
-    color: #B5B5B5;
-}
-
-@media (min-width:768px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding-left: unset;
-    }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding-right: unset;
-    }
-}
-@media (max-width:767px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding: unset;
-    }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding: unset;
-        margin-top: 1.5em;
-    }
-}
-/* 이름 성별 btn */
-.signup-id .form-group{
-    font-size: 15px;
-    color: #878787;
-    margin-bottom: .8em;
-}
-/* 아이디 찾기 form */
-
-.find-value{
-    border: 2px solid #FF8200;
-    color: #FF8200;
-    font-size:18px;
-    font-family: 'appleSdGothicNeoM';
-    border-radius: 5px;
-    padding: 1.9em 0;
-}
-/*  */
-input[type="checkbox"]{
-    display: none;
-}
-.agree>input[type=checkbox] + label { 
-    display: inline-block;  
-    cursor: pointer; 
-    line-height: 15px;     
-    padding-left: 22px;   
-    background: url('../images/checkbox/checkoff.png') no-repeat;   
-    }   
-.agree>input[type=checkbox]:checked + label {
-    background: url('../images/checkbox/checkon.png') no-repeat;
-    color: #4C9EFF;
-}
-.agree_active{
-    background: url('../images/checkbox/checkon.png') no-repeat;
-    color: #4C9EFF;
-    border-color: #4C9EFF;
-}
-/* 체크박스 수정 */
-
-/* 1103 */
-.container-fluid.flex-box{
-    margin-top: 4em;
-}
-.row{
-    margin: 0;
-}
-.flex-side{
-    display: flex;
-    justify-content: space-between;
-}
-
 .flex-box{
     display: flex;
     align-items: center;
 }
-.home-header{
-    padding: 1em;
-}
 
-.left-area{
-    width: 20%;
-    height: auto;
-    background: #fff;
-    float: left;
-}
-.right-area{
-    width: 80%;
-    height: auto;
-    background: #F6F6F6;
-    border-radius: 5px 0 0 0;
-    float: left;
-}
-
-.left-area ul{
-    width: 90%;
-    margin: 0 auto;
-}
-.left-area li{
-
-    border-radius: 5px;
-}
-.left-area ul li.active{
-    background: #2E2E2E;
-}
-.left-area ul li.active p{
-    color: #fff;
-}
-.left-area ul li a{
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-}
-.left-area ul li a:hover{
-    color: #2f2f2f;
-}
-
-.icon-box{
-    width: 24px;
-    height: 24px;
-    margin-right: .5em;
-}
-
-.tab-home .icon-box{
-    background-image: url(../img/icon/home_grey.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.left-area li.active .tab-home .icon-box{
-    background-image: url(../img/icon/home.png)
-}
-
-.tab-info .icon-box{
-    background-image: url(../img/icon/login_grey.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.left-area li.active .tab-info .icon-box{
-    background: url(../img/icon/login.png);
-}
-
-.tab-pr .icon-box{
-    background-image: url(../img/icon/product_grey.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.left-area li.active .tab-pr .icon-box{
-    background-image: url(../img/icon/product.png);
-}
-
-.tab-ad .icon-box{
-    background-image: url(../img/icon/ad_grey.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.left-area li.active .tab-ad .icon-box{
-    background-image: url(../img/icon/ad.png);
-}
-
-.logout{
-    margin-top: 100%;
-    margin-left: 1em;
-}
-.logout > a {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-}
-.logout > a:hover {
-    color: #2E2E2E;
-}
-.left-area .logout .icon-box{
-    background-image: url(../img/icon/logout.png);
-    margin-right: 7px;
-}
-
-
-/* 메인 화면 우측 구역 */
-.right-area > .row{
-    display: flex;
-    justify-content: space-between;
-}
-.box-wrap{
-    background: #fff;
-    border-radius: 5px;
-    width: 48%;
+/* 우측 섹션 */
+.bd-grey{
+    max-width: 49%;
+    min-height: 424px;
     border: 1px solid #EBEBEB;
-    padding: 15px;
-}
-.info-box-wrap{
-    width: 100%;
-    padding: 2em 1em;
-}
-.pr-list{
-    height: 100%;
-}
-.pr-list .pr-title h3{
-    font-size: 1.56em;
-}
-.pr-list .pr-title a{
-    display: block;
-    background: #EBEBEB;
-    padding: 10px 15px;
-}
-.pr-list .pr-title a:hover{
-    color: #2E2E2E;
+    border-radius: 10px;
+    padding: 2em;
+    background: #FFFFFF;
 }
 
-.pr-sub{
-    margin: 10px 0px 30px;
-}
-.pr-sub p{
-    color: #878787;
-}
 
-/* 테이블 */
-.pr-table{
-    font-size: 12px;
-}
-.pr-table table{
-    width: 100%;
-}
-
-.pr-table th{
-    color: #878787;
-    height: 2em;
-}
-
-.pr-table td{
-    height: 3em;
-}
-.pr-table th:nth-child(n+3):nth-child(-n+5),
-.pr-table td:nth-child(n+3):nth-child(-n+5){
-    text-align: center;
-}
-
-.pr-main-title h3{
-    font-size: 2em;
-}
-.pr-main-title p{
-    color: #878787;
-}
-.pr-name-sub{
-    margin: 10px 0 30px;
-}
-.pr-name-sub p{
-    color: #878787;
-}
+/* 공모양 생성 */
 .circle{
     width: 11px;
     height: 11px;
-    border-radius: 50%;
-    margin: 0 .5em 0 .7em;
     background: #ff8200;
+    border-radius: 50px;
 }
 .circle.blue{
     background: #4C9EFF;
 }
-.pr-name select{
+
+/* 상품페이지 영역 */
+.cash-title{
+    font-weight: 400;
+    font-size: 1.4375em;
+    margin-right: .5652em;
+}
+.circle-sub p{
+    color: #878787;
+    font-size: .75em;
+    margin-left: 5px;
+}
+.cash-sub p {
+    margin-top: 10px;
+    margin-bottom: 3em;
+    color: #878787;
+    font-size: .9375em;
+}
+.cash-select select{
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    color: #878787;
+    font-size: .95em;
+    padding: .3em .5em;
+}
+
+/* 상품 리스트 영역 */
+ul{
+    margin: 0;
+}
+.pr-list-title{
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: .6875em;
+}
+
+.pr-list-title p{
+    font-size: .75em;
+    color: #878787;
+}
+
+.pr-list p, .pr-list a{
+    width: 100%;
+    font-size: .75em;
+    color: #2E2E2E;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pr-list a{
+    padding: .5em .75em;
     border: 1px solid #EBEBEB;
     border-radius: 5px;
     color: #878787;
-    padding: 3px 5px;
 }
 
-
-.divider{
-    margin: 2em 0;
+.pr-list-title > li{
+    position: relative;
+}
+.pr-list > li {
+    position: relative;
+    height: 40px;
 }
 
-.ad-wrap p{
+.pr-list-title > li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: 0;
+    left: 14%;
+    background: #ebebeb;
+}
+.pr-list > li::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 14%;
+    background: #ebebeb;
+}
+.pr-img{
+    width: 15%;
+    position: relative;
+}
+.pr-title{
+    width: 30%;
+}
+.pr-day{
+    width: 20%;
+    text-align: center;
+}
+.pr-mile{
+    width: 20%;
+    text-align: center;
+}
+.pr-stat{
+    width: 19%;
+    text-align: center;
+}
+/* 광고리스트 영역 */
+.cash-more a{
+    padding: .5em 1em;
+    background: #EBEBEB;
+    border-radius: 5px;
+    font-size: .95em;
     color: #878787;
 }
 
-.nav>li>a:hover{
-    background: #fff !important;
-    border-radius: 5px;
+.ad-list-title p{
+    font-size: .75em;
+    color: #878787;
+}
+.ad-list p{
+    font-size: .75em;
     color: #2e2e2e;
 }
 
-.nav > li.active a{
-    background: #2E2E2E !important;
-    border-radius: 5px;
-}
-.nav > li.active a:hover{
-    background: #2E2E2E !important;
-    color: #fff;
-}
-
-/* 내 정보 페이지 */
-
-.info-title{
-    font-size: 1.88em;
-    margin-bottom: 1em;
-}
-.info-wrap p{
-    font-size: .94em;
-    color: #878787;
-    margin-bottom: .2em;
-}
-
-.info-wrap input{
-    width: 100%;
-    margin-bottom: 1.75em;
-    border: none;
-    border-bottom: 1px solid #EBEBEB;
-    padding: 5px 5px;
-}
-
-.row.info-wrap .col-md-6{
-    padding: 0;
-}
-.mileage input{
-    width: 80%;
-    background: url(../img/icon/milleage.png)no-repeat;
-    background-position: 5px center;
-    padding-left: 30px;
-    margin-bottom: 0;
-    border-bottom: none;
-}
-.mileage .flex-box{
+.ad-list-title{
+    padding-bottom: 0.6875em;
     border-bottom: 1px solid #ebebeb;
 }
-.mileage button{
-    width: 20%;
-    padding: 10px 0;
-    background: #2E2E2E;
-    color: #fff;
-    border-radius: 5px;
-}
-.info-wrap input::placeholder{
-    color: #B5B5B5;
-}
-.place-black input::placeholder{
-    color: #2E2E2E;
+.ad-list li{
+    height: 2em;
 }
 
-/* 성별 버튼 */
-.info-mf a{
-    display: block;
-    width: 95%;
-    padding: 10px 0;
-    margin: 1em 0;
-    border: 1px solid #B5B5B5;
-    border-radius: 5px;
-    color: #b5b5b5;
-    text-align: center;
-}
-.info-mf a.active{
-    border-color: #ff8200;
-    color: #ff8200;
-}
-
-/* 아이디 찾기 */
-.find-id{
-    background: #FF8200;
-    color: #fff;
-    font-size: 1em;
-    border-radius: 5px;
-    padding: .7em 1em;
-    margin-top: 3.125em;
-}
-.find-id:hover{
-    background: #ff8200;
-}
-
-/* 광고 페이지 */
-.ad-fluid{
-    padding: 0 5em;
-}
-
-.ad-fluid h3{
-    font-size: 1.875em;
-}
-.ad-app{
-    display: block;
-    padding: 1em 1.5em;
-    background: #ff8200;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-/* 광고 테이블 */
-.ad-wrap > ul.ad-th > li{
-    display: flex;
-    align-items: center;
-    padding: 1.65em 0;
-    border-bottom: 1px solid #EBEBEB;
-}
-.ad-wrap > ul.ad-td > li{
-    display: flex;
-    align-items: center;
-}
-.ad-num{
-    width: 8%;
-}
-.ad-title{
+.ad-name{
     width: 15%;
 }
-.ad-register{
-    width: 9%;
-}
-.ad-mile{
-    width: 12%;
-}
-.ad-click{
-    width: 12%;
+
+.ad-day{
+    width: 16%;
+    text-align: center;
 }
 .ad-type{
-    width: 9%;
+    width: 20%;
 }
-.ad-click-count{
-    width: 10%;
+.ad-mile{
+    width: 25%;
 }
-.ad-view-count{
-    width: 12%;
+.ad-click{
+    width: 25%;
 }
 .ad-stat{
-    width: 8%;
+    width: 7%;
+    text-align: center;
+}
+.ad-stat .circle{
+    margin: 0 auto;
+}
+
+/* 광고 리스트 페이지 */
+
+
+.ad-app-wrap{
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+    padding: 1.8em 3em;
+    background: #ffffff;
+}
+.aa-num{
+    width: 7%;
+    text-align: center;
+}
+.aa-num p{
+    color: #878787;
+}
+.aa-name, .aa-mile, .aa-click{
+    width: 21%;
+}
+.aa-day, .aa-type, .aa-stat, .aa-click-count{
+    width: 11%;
+}
+.aa-day{
+    text-align: center;
+}
+.aa-view{
+    width: 12%;
+}
+.ad-app-list-title p{
+    color: #878787;
+    font-size: .9375em;
+}
+.ad-app-list li{
+    height: 3em;
+}
+
+.ad-app-list li p{
+    font-size: .9375em;
 }
 
 
-/* 미디어 쿼리 */
-@media(min-width:993px){
-    .navbar-nav>li{
-        float: none;
+@media(max-width:1495px){
+    .slde-nav span{
+        display: none;
     }
 }
-@media(max-width:992px){
-    .row{
+
+@media(min-width:1615px){
+    .content .container.wd-1400{
+        width: 1400px;
+        max-width: 1400px;
+    }
+}
+
+
+@media(max-width:1130px){
+    .content .row{
         flex-direction: column;
     }
-    .left-area{
-        width: 25%;
-        float: right;
+    .mobile-m2{
+        margin-bottom: 2em;
     }
-    .right-area{
-        width: 75%;
+    .mobile-pd2{
+        padding-top: 2em;
     }
-    .col-12{
-        width: 100% !important;
+    .content .col-md-6{
+        width: 95%;
+        max-width: 95%;
     }
-    section > .container-fluid{
-        flex-direction: row-reverse;
+}
+
+@media(max-width: 768px){
+    .layout{
+        flex-wrap: wrap;
     }
-    .navbar-toggle{
-        border: 1px solid #2E2E2E;
+    .slde-nav{
+        width: 100%;   
     }
-    .navbar-toggle .icon-bar{
-        background: #2E2E2E;
+    .slde-nav{
+        flex-direction: row;
+        align-items: center;
     }
-    .left-area ul{
+    .slde-nav > ul{
+        display: flex;
+    }
+    .slde-nav span{
         display: none;
+    }
+    .content{
         width: 100%;
+        border-radius: 0px;
     }
-    .nav > li p{
-        font-size: .75em;
-    }
-    .navbar-nav>li{
-        float: none;
-    }
-    .navbar-toggle{
-        display: block !important;
-    }
-    .collapse{
-        display: inline-block;
-        visibility: inherit;
-    }
-    .navbar-collapse{
-        padding: 0;
-    }
-    .logout p{
-        font-size: .8em;
-    }
-    .pr-main-title h3{
-        font-size: 1.2em;
-    }
-    .pr-list .pr-title h3{
-        font-size: 1.2em;
-    }
-    .pr-main-title p, .ad-wrap p, .pr-name select{
-        font-size: .75em;
-    }
-    .pr-list .pr-title a{
-        font-size: .8em;
-        padding: 5px 10px;
-    }
-    .pr-table th, .pr-table td{
-        font-size: .8em;
+    .col-md-6{
+        width: 100%;
+        max-width: 100%;
     }
 
-    /* 내 정보 페이지 미디어 쿼리 */
-    .mileage input{
-        width: 70%;
+}
+
+@media(max-width:586px){
+    .pr-day{
+        display: none;
     }
-    .mileage button{
+    .ad-day, .ad-click{
+        display: none;
+    }
+
+    .pr-img{
+        width: 16%;
+    }
+    .pr-img img{
+        width: 50%;
+    }
+    .pr-title, .pr-mile, .pr-stat{
+        width: 26%;
+    }
+    .ad-type, .ad-mile, .ad-name{
         width: 30%;
-        padding: 5px 0;
+    }
+    .bd-grey{
+        min-height: 320px;
+    }
+    .pr-list-title > li::after{
+        display: none;
+    }
+    .pr-list > li::after{
+        display: none;
+    }
+    .mobile-cul{
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .cash-select select{
+        font-size: .75em;
+    }
+    .cash-title{
+        font-size: 1.2em;
+    }
+    .cash-more a{
+        padding: .25em .5em;
+        font-size: .75em;
+    }
+    .ad-stat{
+        width: 13%;
+    }
+    .login-content{
+        display: none;
+    }
+    .ad-list p, .pr-list p, .pr-list a{
+        font-size: .6875em;
     }
 }
 
-@media (min-width:768px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding-left: unset;
+@media(max-width: 280px){
+    .cul--w280{
+        flex-direction: column;
+        align-items: baseline;
     }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding-right: unset;
+    .cul--w280c{
+        flex-direction: column;
     }
-}
-@media (max-width:767px){
-    .signup-info-form .form-group .col-sm-6:first-child {
-        padding: unset;
+    .pr-list-title p{
+        font-size: .6875em;
     }
-    .signup-info-form .form-group .col-sm-6:last-child {
-        padding: unset;
-        margin-top: 1.5em;
+    .pr-img{
+        width: 20%;
+    }
+    header{
+        height: 3em;
+    }
+    .slde-nav.pd-b2{
+        padding-bottom: 0 !important;
+    }
+    .logout{
+        position: absolute;
+        right: 8px;
+        top: 15px;
+    }
+    .ad-list p, .pr-list p, .pr-list a{
+        font-size: .6em;
     }
 }

@@ -1,444 +1,451 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="">
-    <meta property="og:description" content=""> 
-    <meta property="og:title" content="">
-    <!-- meta tag -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="bootstrap/jquery.min.js"></script>
-    <script src="js/Chart.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/master.css">
-    <!-- css -->
-    <title>Cashview</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta property="og:title" content="">
+        <!-- meta tag -->
+        
+        <!-- chart -->
 
-<body>
-    <header>
-
-        <div class="container-fluid">
-            <div class="home-header">
-                <div class="row">
-                    <div class="col-md-12 col-12 flex-side">
-                        <div class="header--logo">
-                            <a href="#">
-                                <img src="img/top_logo.png" alt="상단로고">
-                            </a>
-                        </div>
-                        <div class="header--mypage flex-box">
-                            <img src="img/icon/login_grey.png" alt="login">
-                            <p><span>홍길동</span>님, 안녕하세요.</p>
-                        </div>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/master.css">
+        <!-- css -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="img/top_logo.png" alt="">
+            </div>
+            <div class="nav">
+                <div class="login-content">
+                    <div class="icon"></div>
+                    <div class="login-text">
+                        <p><span class="name">홍길동</span>님, 안녕하세요.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- header -->
-    <section>
-        <div class="container-fluid">
-            <div class="left-area">
-                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#" class="tab-home">
-                                <div class="icon-box"></div>
-                                <p>홈</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="tab-info">
-                                <div class="icon-box"></div>
-                                <p>내 정보</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="tab-pr">
-                                <div class="icon-box"></div>
-                                <p>상품</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="tab-ad">
-                                <div class="icon-box"></div>
-                                <p>광고</p>
-                            </a>
-                        </li>
-                        <div class="logout">
-                            <a href="#">
-                                <div class="icon-box"></div>
-                                <p>캐시뷰 로그아웃</p>
-                            </a>
-                        </div>
-                    </ul>
-                </div>
+        </header>
+    <section class="layout">
+        <div class="slde-nav pd-b2">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="icon-box home"></div>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box info"></div>
+                        <span>내 정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box pr"></div>
+                        <span>상품</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box ad"></div>
+                        <span>광고</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a href="#">
+                    <div class="icon-box lg-out"></div>
+                    <span>캐시뷰 로그아웃</span>
+                </a>
             </div>
-            <!-- left area end -->
-            <!-- right area -->
-            <div class="right-area">
-                <!-- row -->
-                <div class="row">
-                    <!-- col-6 모바일 시 12 -->
-                    <div class="col-md-6 col-12 box-wrap">
-                        <div class="pr-name flex-side">
-                            <div class="pr-main-title flex-box">
-                                <h3>상품</h3>
-                                <div class="circle orange"></div>
-                                <p>상품판매량</p>
+        </div>
+        <div class="content pd-b3 mobile-pd2">
+            <div class="container">
+                <div class="row flex-side">
+                    <div class="col-md-6 bd-grey mg-b2">
+                        <div class="flex-side">
+                            <div class="flex-box cul--w280">
+                                <h3 class="cash-title">상품</h3>
+                                <div class="circle-wrap flex-box">
+                                    <div class="circle"></div>
+                                    <div class="circle-sub">
+                                        <p>상품 판매량</p>
+                                    </div>
+                                </div>
                             </div>
-                            <select name="" id="">
-                                <option value="1">이번주</option>
-                                <option value="2">저번주</option>
-                            </select>
+                            <div class="cash-select">
+                                <select name="" id="">
+                                    <option value="1">이번주</option>
+                                    <option value="2">다음주</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="pr-name-sub">
+                        <div class="cash-sub">
                             <p>날짜별 내 상품 판매랑 통계입니다.</p>
                         </div>
-                        <!-- chart -->
-                        <canvas id="myChart"></canvas>
-                        <!-- chart end -->
+                        <canvas id="prChart"></canvas>
                     </div>
-                    <!-- col-6 end -->
-                    <!-- col-6 모바일 시 12 -->
-                    <div class="col-md-6 col-12 box-wrap">
-                        <div class="row">
-                            <div class="pr-list">
-                                <div class="pr-title flex-side">
-                                    <h3>상품 리스트</h3>
-                                    <a href="#">더보기</a>
-                                </div>
-                                <div class="pr-sub">
-                                    <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
-                                </div>
+                    <div class="col-md-6 bd-grey mg-b2">
+                        <div class="flex-side">
+                            <div class="flex-box">
+                                <h3 class="cash-title">상품 리스트</h3>
                             </div>
-                            <!-- 테이블 -->
-                            <div class="pr-table">
-                                <table>
-                                    <colgroup>
-                                        <col width="15%">
-                                        <col width="34%">
-                                        <col width="17%">
-                                        <col width="17%">
-                                        <col width="15%">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>이미지</th>
-                                            <th>상품명</th>
-                                            <th>등록 날짜</th>
-                                            <th>마일리지</th>
-                                            <th>상세</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <img src="img/pr1.png" alt="pr">
-                                            </td>
-                                            <td>엄청난상품엄청난상품</td>
-                                            <td>2020.10.01</td>
-                                            <td>1,000 포인트</td>
-                                            <td>상세보기</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="img/pr2.png" alt="pr">
-                                            </td>
-                                            <td>엄청난상품엄청난상품엄청난상품</td>
-                                            <td>2020.10.01</td>
-                                            <td>1,000 포인트</td>
-                                            <td>상세보기</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="img/pr3.png" alt="pr">
-                                            </td>
-                                            <td>엄청난상품엄청난상품</td>
-                                            <td>2020.10.01</td>
-                                            <td>1,000 포인트</td>
-                                            <td>상세보기</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="img/pr4.png" alt="pr">
-                                            </td>
-                                            <td>엄청난상품</td>
-                                            <td>2020.10.01</td>
-                                            <td>1,000 포인트</td>
-                                            <td>상세보기</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="img/pr5.png" alt="pr">
-                                            </td>
-                                            <td>엄청난상품엄청난상품엄청난상품</td>
-                                            <td>2020.10.01</td>
-                                            <td>1,000 포인트</td>
-                                            <td>상세보기</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="cash-more">
+                                <a href="#">더보기</a>
                             </div>
-                            <!-- table end -->
                         </div>
-                    </div>
-                    <!-- col-6 end -->
-                </div>
-                <!-- row end -->
-                <div class="divider"></div>
-                <!-- row -->
-                <div class="row">
-                    <!-- col-6 -->
-                    <div class="col-md-6 col-12 box-wrap">
-                        <div class="pr-name flex-side">
-                            <div class="pr-main-title flex-box">
-                                <h3>광고</h3>
-                                <div class="circle blue"></div>
-                                <p>시청 완료 수</p>
-                                <div class="circle"></div>
-                                <p>광고 시청 수</p>
-                            </div>
-                            <select name="" id="">
-                                <option value="1">이번주</option>
-                                <option value="2">저번주</option>
-                            </select>
+                        <div class="cash-sub">
+                            <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
                         </div>
-                        <div class="pr-name-sub">
+                        <div class="col-md-12">
+                            <ul class="pr-list-title">
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <p>이미지</p>
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>상품명</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>등록 날짜</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>마일리지</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <p>상세</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="pr-list">
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <img src="img/pr1.png" alt="pr">
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>엄청난상품엄청난상품</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>2020.10.01</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>1,000 포인트</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <a href="#">상세보기</a>
+                                    </div>
+                                </li>
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <img src="img/pr2.png" alt="pr">
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>엄청난상품엄청난상품엄청난상품</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>2020.10.01</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>1,000 포인트</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <a href="#">상세보기</a>
+                                    </div>
+                                </li>
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <img src="img/pr3.png" alt="pr">
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>엄청난상품엄청난상품</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>2020.10.01</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>1,000 포인트</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <a href="#">상세보기</a>
+                                    </div>
+                                </li>
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <img src="img/pr4.png" alt="pr">
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>엄청난상품</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>2020.10.01</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>1,000 포인트</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <a href="#">상세보기</a>
+                                    </div>
+                                </li>
+                                <li class="flex-box">
+                                    <div class="pr-img">
+                                        <img src="img/pr5.png" alt="pr">
+                                    </div>
+                                    <div class="pr-title">
+                                        <p>엄청난상품엄청난상품엄청난상품</p>
+                                    </div>
+                                    <div class="pr-day">
+                                        <p>2020.10.01</p>
+                                    </div>
+                                    <div class="pr-mile">
+                                        <p>1,000 포인트</p>
+                                    </div>
+                                    <div class="pr-stat">
+                                        <a href="#">상세보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <div class="col-md-6 bd-grey mobile-m2">
+                        <div class="flex-side">
+                            <div class="flex-box mobile-cul">
+                                <h3 class="cash-title">광고</h3>
+                                <div class="flex-box cul--w280c">
+                                    <div class="circle-wrap flex-box">
+                                        <div class="circle blue"></div>
+                                        <div class="circle-sub">
+                                            <p>상품 판매량</p>
+                                        </div>
+                                    </div>
+                                    <div class="mg-l2p circle-wrap flex-box">
+                                        <div class="circle"></div>
+                                        <div class="circle-sub">
+                                            <p>광고 시청 수</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cash-select">
+                                <select name="" id="">
+                                    <option value="1">이번주</option>
+                                    <option value="2">다음주</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cash-sub">
                             <p>날짜별 광고 클릭 및 시청 완료 횟수의 통계입니다.</p>
                         </div>
-                        <!-- chart -->
-                        <canvas id="second-chart"></canvas>
-                        <!-- chart end -->
+                        <canvas id="adChart"></canvas>
                     </div>
-                    <!-- col-6 end -->
-                    <!-- col-6 -->
-                    <div class="col-md-6 col-12 box-wrap">
-                        <div class="row">
-                            <div class="pr-list">
-                                <div class="pr-title flex-side">
-                                    <div class="ad-wrap flex-box">
-                                        <h3>광고 리스트</h3>
+                    <div class="col-md-6 bd-grey">
+                        <div class="flex-side">
+                            <div class="flex-box mobile-cul">
+                                <h3 class="cash-title">광고리스트</h3>
+                                <div class="flex-box">
+                                    <div class="circle-wrap flex-box">
                                         <div class="circle blue"></div>
-                                        <p>등록완료</p>
-                                        <div class="circle"></div>
-                                        <p>신청</p>
+                                        <div class="circle-sub">
+                                            <p>등록완료</p>
+                                        </div>
                                     </div>
-                                    <a href="#">더보기</a>
-                                </div>
-                                <div class="pr-sub">
-                                    <p>상세보기를 클릭해 더 많은 광고 리스트를 찾아보세요.</p>
+                                    <div class="mg-l2p circle-wrap flex-box">
+                                        <div class="circle"></div>
+                                        <div class="circle-sub">
+                                            <p>신청</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- 테이블 -->
-                            <div class="pr-table">
-                                <table>
-                                    <colgroup>
-                                        <col width="20%">
-                                        <col width="15%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="20%">
-                                        <col width="5%">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>광고명</th>
-                                            <th>등록 날짜</th>
-                                            <th>광고 유형</th>
-                                            <th>마일리지(광고단가)</th>
-                                            <th>마일리지(광고클릭시)</th>
-                                            <th>상태</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형이름</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle"></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td>엄청난광고엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle"></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td>엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형이름</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle blue"></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td>엄청난광고엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle blue"></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td>엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형이름</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle blue"></div></td>
-                                        </tr>
-                                        <tr>
-                                            <td>엄청난광고엄청난광고</td>
-                                            <td>2020.10.01</td>
-                                            <td>광고유형</td>
-                                            <td>1,000 포인트</td>
-                                            <td>500 포인트</td>
-                                            <td><div class="circle blue"></div></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="cash-more">
+                                <a href="#">더보기</a>
                             </div>
-                            <!-- table end -->
                         </div>
+                        <div class="cash-sub">
+                            <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                        </div>
+                        <ul class="ad-list-title">
+                            <l1 class="flex-box">
+                                <div class="ad-name">
+                                    <p>광고명</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>등록 날짜</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>마일리지<br>(광고단가)</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>마일리지<br>(광고클릭시)</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>상태</p>
+                                </div>
+                            </l1>
+                        </ul>
+                        <ul class="ad-list">
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle"></div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고<br>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle"></div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle blue"></div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle blue"></div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고<br>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle blue"></div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex-box">
+                                <div class="ad-name">
+                                    <p>엄청난광고</p>
+                                </div>
+                                <div class="ad-day">
+                                    <p>2020.10.01</p>
+                                </div>
+                                <div class="ad-type">
+                                    <p>광고유형</p>
+                                </div>
+                                <div class="ad-mile">
+                                    <p>1,000 포인트</p>
+                                </div>
+                                <div class="ad-click">
+                                    <p>500 포인트</p>
+                                </div>
+                                        
+                                <div class="ad-stat">
+                                    <p>
+                                        <div class="circle blue"></div>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- col-6 end -->
                 </div>
-                <!-- row end -->
             </div>
+
         </div>
     </section>
-    <!-- section -->
-    <footer>
 
-    </footer>
-    <!-- footer -->
+    <!-- bootstrap -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
-<script>
-    var colors = ['#ff8200','#4C9EFF']
-    var ctx = document.getElementById('myChart').getContext('2d');
-
-    var chart = new Chart(ctx, { 
-        type: 'line', 
-    // 챠트를 그릴 데이타 
-        data: { 
-            labels: ['10.20', '10.20', '10.20', '10.20', '10.20', '10.20', '10.20'],
-            datasets: [{
-                label: "",
-                backgroundColor:'transparent', 
-                borderColor: '#FF8200',
-                data: [200, 300, 100, 400, 500, 400, 300],
-                
-            }
-        ]}, // 옵션 
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines:{
-                        color: 'rgba(0,0,0,0)',
-                        lineWidth:0,
-                        drawOnChartArea: false
-                    },
-                }],
-                xAxes: [{
-                    gridLines:{
-                        color: 'rgba(0,0,0,0)',
-                        lineWidth: 0
-                    }
-                }],
-            },
-    } });
-</script>
-
-<script>
-        var ctx1 = document.getElementById('second-chart').getContext('2d');
-
-        var chart1 = new Chart(ctx1, { 
-            type: 'line', 
-        // 챠트를 그릴 데이타 
-            data: { 
-                labels: ['10.20', '10.20', '10.20', '10.20', '10.20', '10.20', '10.20'],
-                datasets: [{
-                    label:"",
-                    backgroundColor:'transparent', 
-                    borderColor: '#FF8200',
-                    data: [100, 200, 0, 300, 350, 300, 200],
-                    pointBackgroundColor: 'transparent'
-                },
-                {   
-                    backgroundColor:'transparent',
-                    borderColor: '#4C9EFF',
-                    data: [300, 330, 300, 400, 450, 400, 360]
-                }
-            ]},
-             // 옵션 
-            options: {
-                legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines:{
-                        color: 'rgba(0,0,0,0)',
-                        lineWidth:0,
-                        drawOnChartArea: false
-                    },
-                }],
-                xAxes: [{
-                    gridLines:{
-                        color: 'rgba(0,0,0,0)',
-                        lineWidth: 0
-                    }
-                }],
-            },
-        } });
-</script>
-
-<script>
-    var ctx = document.getElementById('userchart');
-    var myChart = new Chart(ctx, {
-        type: 'bar', 
-        data: { 
-            labels: ['10.20', '10.21', '10.22', '10.23', '10.24', '10.25', '10.26'], 
-            datasets: [{ 
-                label: '# of Votes', 
-                data: [400, 500, 200, 400, 400, 300, 500], 
-                backgroundColor: [ '#D5D5D5', '#FF8200', '#D5D5D5', '#D5D5D5', '#D5D5D5', '#D5D5D5','#FF8200' ] }] 
-                },
-                
-                options: { 
-                    legend: {
-                        display: false
-                    },
-                    scales: { 
-                        yAxes: [{ 
-                            ticks: { 
-                                beginAtZero: true
-                                }
-                            }]
-                        },
-                    } 
-                });
-</script>
-
 </html>
