@@ -191,11 +191,20 @@ header{
     max-width: 49%;
     min-height: 424px;
     border: 1px solid #EBEBEB;
+    padding: 1.5em;
     border-radius: 10px;
-    padding: 2em;
     background: #FFFFFF;
 }
 
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1350px !important;
+}
+#prChart{
+    height: 243px !important;
+}
+#adChart{
+    height: 245px !important;
+}
 
 /* 공모양 생성 */
 .circle{
@@ -271,24 +280,6 @@ ul{
     height: 40px;
 }
 
-.pr-list-title > li::after{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100px;
-    top: 0;
-    left: 14%;
-    background: #ebebeb;
-}
-.pr-list > li::after{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 14%;
-    background: #ebebeb;
-}
 .pr-img{
     width: 15%;
     position: relative;
