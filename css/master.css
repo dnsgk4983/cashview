@@ -450,33 +450,8 @@ ul{
 }
 
 @media(max-width:586px){
-    .pr-day{
-        display: none;
-    }
-    .ad-day{
-        display: none;
-    }
-
-    .pr-img{
-        width: 16%;
-    }
-    .pr-img img{
-        width: 50%;
-    }
-    .pr-title, .pr-mile, .pr-stat{
-        width: 26%;
-    }
-    .ad-type, .ad-mile, .ad-name{
-        width: 30%;
-    }
     .bd-grey{
         min-height: 320px;
-    }
-    .pr-list-title > li::after{
-        display: none;
-    }
-    .pr-list > li::after{
-        display: none;
     }
     .mobile-cul{
         flex-direction: column;
@@ -492,14 +467,17 @@ ul{
         padding: .25em .5em;
         font-size: .75em;
     }
-    .ad-stat{
-        width: 13%;
-    }
     .login-content{
         display: none;
     }
-    .ad-list p, .pr-list p, .pr-list a{
+    .pr-table table{
         font-size: .6875em;
+    }
+    .pr-table img{
+        width: 2em;
+    }
+    .ad-day, .ad-click-mile{
+        display: none;
     }
 }
 
@@ -510,12 +488,6 @@ ul{
     }
     .cul--w280c{
         flex-direction: column;
-    }
-    .pr-list-title p{
-        font-size: .6875em;
-    }
-    .pr-img{
-        width: 20%;
     }
     header{
         height: 3em;
