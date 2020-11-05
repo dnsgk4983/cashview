@@ -140,6 +140,12 @@ header{
     padding: .85em;
     border-radius: 10px;
 }
+.slde-nav li.active{
+    background: #2E2E2E;
+}
+.slde-nav li.active a{
+    color: #fff;
+}
 .slde-nav > ul > li > a{
     display: flex;
     align-items: center;
@@ -160,12 +166,14 @@ header{
 .logout span{
     font-size: .95em;
 }
+
 .icon-box.home{
-    background: url(../img/icon/home_grey.png);
+    background: url(../img/icon/home.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .icon-box.info{
     background: url(../img/icon/login_grey.png);
@@ -265,60 +273,40 @@ header{
 ul{
     margin: 0;
 }
-.pr-list-title{
-    border-bottom: 1px solid #EBEBEB;
-    padding-bottom: .6875em;
-}
 
-.pr-list-title p{
-    font-size: .75em;
-    color: #878787;
-}
-
-.pr-list p, .pr-list a{
-    font-weight: 600;
+.pr-table > table{
     width: 100%;
-    font-size: .75em;
-    color: #2E2E2E;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
-.pr-list a{
-    padding: .5em .75em;
-    border: 1px solid #EBEBEB;
-    border-radius: 5px;
+.pr-table tr{
+    height: 2.5em;
+}
+.pr-table th{
     color: #878787;
-    font-size: .6875em;
+    font-size: .75em;
+}
+.pr-table td{
+    color: #2E2E2E;
+    font-size: .75em;
+    font-weight: 600;
 }
 
-.pr-list-title > li{
-    position: relative;
+.pr-table .text-center{
+    text-align: center;
 }
-.pr-list > li {
-    position: relative;
-    height: 3em;
+.pr-table .pr-view{
+    text-align: center;
+}
+.pr-table .pr-view a{
+    border: 1px solid #EBEBEB;
+    color: #878787;
+    border-radius: 5px;
+    font-size: 0.6875em;
+    padding: .5em;
+}
+.pr-table .pr-day{
+    text-align: center;
 }
 
-.pr-img{
-    width: 15%;
-    position: relative;
-}
-.pr-title{
-    width: 30%;
-}
-.pr-day{
-    width: 20%;
-    text-align: center;
-}
-.pr-mile{
-    width: 20%;
-    text-align: center;
-}
-.pr-stat{
-    width: 19%;
-    text-align: center;
-}
 /* 광고리스트 영역 */
 .cash-more a{
     padding: .5em 1em;
@@ -337,36 +325,25 @@ ul{
     color: #2e2e2e;
 }
 
-.ad-list-title{
-    padding-bottom: 0.6875em;
-    border-bottom: 1px solid #ebebeb;
+.ad-table table{
+    width: 100%;
 }
-.ad-list li{
-    height: 2em;
+.ad-table tr{
+    height: 2.5em;
 }
-
-.ad-name{
-    width: 15%;
+.ad-table th{
+    color: #878787;
+    font-size: .75em;
 }
-
-.ad-day{
-    width: 16%;
+.ad-table td{
+    color: #2E2E2E;
+    font-size: .75em;
+    font-weight: 600;
+}
+.ad-table .text-center{
     text-align: center;
 }
-.ad-type{
-    width: 20%;
-}
-.ad-mile{
-    width: 25%;
-}
-.ad-click-mile{
-    width: 25%;
-}
-.ad-stat{
-    width: 7%;
-    text-align: center;
-}
-.ad-stat .circle{
+.ad-table .circle{
     margin: 0 auto;
 }
 
@@ -414,6 +391,9 @@ ul{
 @media(max-width:1495px){
     .slde-nav span{
         display: none;
+    }
+    .icon-box{
+        margin-right: 0;
     }
 }
 
