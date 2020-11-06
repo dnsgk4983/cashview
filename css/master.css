@@ -152,6 +152,10 @@ header{
     color: #878787;
 }
 
+.slde-nav span{
+    font-size: .9375em;
+}
+
 .icon-box{
     width: 25px;
     height: 25px;
@@ -199,6 +203,12 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.icon-box.menu{
+    background: url(../img/icon/menu_grey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .flex-side{
@@ -478,6 +488,20 @@ ul{
     }
     .ad-day, .ad-click-mile{
         display: none;
+    }
+    .pr-table tr > th:not(:nth-child(1)){
+        text-align: center; 
+    }
+    .pr-table tbody td:not(:nth-child(1)){
+        text-align: center;
+    }
+    
+    .ad-table tr > th:not(:nth-child(1)){
+        text-align: center;
+    }
+    
+    .ad-table tbody td:not(:nth-child(1)){
+        text-align: center;
     }
 }
 

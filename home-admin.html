@@ -57,6 +57,12 @@
                         <span>광고</span>
                     </a>
                 </li>
+                <li class="">
+                    <a href="#">
+                        <div class="icon-box menu"></div>
+                        <span>사용자/광고주</span>
+                    </a>
+                </li>
             </ul>
             <div class="logout">
                 <a href="#">
@@ -352,6 +358,293 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row end -->
+            <!-- row -->
+            <div class="row flex-side">
+                <div class="col-md-6 bd-grey mg-b2">
+                    <div class="flex-side">
+                        <div class="flex-box cul--w280">
+                            <h3 class="cash-title">상품</h3>
+                            <div class="circle-wrap flex-box">
+                                <div class="circle"></div>
+                                <div class="circle-sub">
+                                    <p>상품 판매량</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cash-select">
+                            <select name="" id="">
+                                <option value="1">이번주</option>
+                                <option value="2">다음주</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cash-sub">
+                        <p>날짜별 내 상품 판매랑 통계입니다.</p>
+                    </div>
+                    <canvas id="prChart"></canvas>
+                </div>
+                <div class="col-md-6 bd-grey mg-b2">
+                    <div class="flex-side">
+                        <div class="flex-box">
+                            <h3 class="cash-title">상품 리스트</h3>
+                        </div>
+                        <div class="cash-more">
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                    <div class="cash-sub">
+                        <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pr-table">
+                            <table>
+                                <colgroup>
+                                    <col width="15%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                    <col width="25%">
+                                    <col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>이미지</th>
+                                        <th>상품명</th>
+                                        <th class="pr-day">등록날짜</th>
+                                        <th class="text-center">마일리지</th>
+                                        <th class="pr-view">상세</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="img/pr1.png" alt="pr">
+                                        </td>
+                                        <td>엄청난상품엄청난상품</td>
+                                        <td class="pr-day">2020.10.01</td>
+                                        <td class="text-center">1,000 포인트</td>
+                                        <td class="pr-view">
+                                            <a href="#">
+                                                상세보기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/pr2.png" alt="pr">
+                                        </td>
+                                        <td>엄청난상품엄청난상품엄청난상품</td>
+                                        <td class="pr-day">2020.10.01</td>
+                                        <td class="text-center">1,000 포인트</td>
+                                        <td class="pr-view">
+                                            <a href="#">
+                                                상세보기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/pr3.png" alt="pr">
+                                        </td>
+                                        <td>엄청난상품엄청난상품</td>
+                                        <td class="pr-day">2020.10.01</td>
+                                        <td class="text-center">1,000 포인트</td>
+                                        <td class="pr-view">
+                                            <a href="#">
+                                                상세보기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/pr4.png" alt="pr">
+                                        </td>
+                                        <td>
+                                            엄청난상품
+                                        </td>
+                                        <td class="pr-day">2020.10.01</td>
+                                        <td class="text-center">1,000 포인트</td>
+                                        <td class="pr-view">
+                                            <a href="#">
+                                                상세보기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/pr5.png" alt="pr">
+                                        </td>
+                                        <td>
+                                            엄청난상품엄청난상품엄청난상품
+                                        </td>
+                                        <td class="pr-day">2020.10.01</td>
+                                        <td class="text-center">1,000 포인트</td>
+                                        <td class="pr-view">
+                                            <a href="#">
+                                                상세보기
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-6 bd-grey mobile-m2">
+                    <div class="flex-side">
+                        <div class="flex-box mobile-cul">
+                            <h3 class="cash-title">광고</h3>
+                            <div class="flex-box cul--w280c">
+                                <div class="circle-wrap flex-box">
+                                    <div class="circle blue"></div>
+                                    <div class="circle-sub">
+                                        <p>상품 판매량</p>
+                                    </div>
+                                </div>
+                                <div class="mg-l2p circle-wrap flex-box">
+                                    <div class="circle"></div>
+                                    <div class="circle-sub">
+                                        <p>광고 시청 수</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cash-select">
+                            <select name="" id="">
+                                <option value="1">이번주</option>
+                                <option value="2">다음주</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cash-sub">
+                        <p>날짜별 광고 클릭 및 시청 완료 횟수의 통계입니다.</p>
+                    </div>
+                    <canvas id="adChart"></canvas>
+                </div>
+                <div class="col-md-6 bd-grey">
+                    <div class="flex-side">
+                        <div class="flex-box mobile-cul">
+                            <h3 class="cash-title">광고리스트</h3>
+                            <div class="flex-box">
+                                <div class="circle-wrap flex-box">
+                                    <div class="circle blue"></div>
+                                    <div class="circle-sub">
+                                        <p>등록완료</p>
+                                    </div>
+                                </div>
+                                <div class="mg-l2p circle-wrap flex-box">
+                                    <div class="circle"></div>
+                                    <div class="circle-sub">
+                                        <p>신청</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cash-more">
+                            <a href="#">더보기</a>
+                        </div>
+                    </div>
+                    <div class="cash-sub">
+                        <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                    </div>
+                    <div class="ad-table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="17%">
+                                <col width="17%">
+                                <col width="17%">
+                                <col width="24%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>광고명</th>
+                                    <th class="text-center ad-day">등록날짜</th>
+                                    <th>광고유형</th>
+                                    <th>마일리지<br>(광고단가)</th>
+                                    <th class="ad-click-mile">마일리지<br>(광고클릭 시)</th>
+                                    <th class="text-center">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle blue"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle blue"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle blue"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="text-center ad-day">
+                                        2020.10.01
+                                    </td>
+                                    <td>광고유형</td>
+                                    <td>1,000 포인트</td>
+                                    <td class="ad-click-mile">500 포인트</td>
+                                    <td class="text-center">
+                                        <div class="circle blue"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
