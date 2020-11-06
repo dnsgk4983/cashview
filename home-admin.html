@@ -400,13 +400,13 @@
                             </div>
                         </div>
                         <div class="cash-sub">
-                            <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                            <p>더보기를 클릭해 더 많은 사용자 리스트를 찾아보세요.</p>
                         </div>
                         <div class="col-md-12">
-                            <div class="pr-table">
+                            <div class="pr-table user-table">
                                 <table>
                                     <colgroup>
-                                        <col width="20%%">
+                                        <col width="20%">
                                         <col width="15%">
                                         <col width="25%">
                                         <col width="20%">
@@ -416,9 +416,9 @@
                                         <tr>
                                             <th>이름</th>
                                             <th>성별</th>
-                                            <th>이메일</th>
+                                            <th class="umail">이메일</th>
                                             <th>연락처</th>
-                                            <th>마일리지</th>
+                                            <th class="text-center">마일리지</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -426,36 +426,36 @@
                                             <td>홍길동</td>
                                             <td>남자</td>
                                             <td>searchid@naver.com</td>
-                                            <td>010-1234-5678</td>
-                                            <td>500 포인트</td>
+                                            <th class="umail">010-1234-5678</th>
+                                            <td class="text-center">500 포인트</td>
                                         </tr>
                                         <tr>
                                             <td>홍길동</td>
                                             <td>남자</td>
                                             <td>searchid@naver.com</td>
-                                            <td>010-1234-5678</td>
-                                            <td>500 포인트</td>
+                                            <th class="umail">010-1234-5678</th>
+                                            <td class="text-center">500 포인트</td>
                                         </tr>
                                         <tr>
                                             <td>홍길동</td>
                                             <td>남자</td>
                                             <td>searchid@naver.com</td>
-                                            <td>010-1234-5678</td>
-                                            <td>500 포인트</td>
+                                            <th class="umail">010-1234-5678</th>
+                                            <td class="text-center">500 포인트</td>
                                         </tr>
                                         <tr>
                                             <td>홍길동</td>
                                             <td>남자</td>
                                             <td>searchid@naver.com</td>
-                                            <td>010-1234-5678</td>
-                                            <td>500 포인트</td>
+                                            <th class="umail">010-1234-5678</th>
+                                            <td class="text-center">500 포인트</td>
                                         </tr>
                                         <tr>
                                             <td>홍길동</td>
                                             <td>남자</td>
                                             <td>searchid@naver.com</td>
-                                            <td>010-1234-5678</td>
-                                            <td>500 포인트</td>
+                                            <th class="umail">010-1234-5678</th>
+                                            <td class="text-center">500 포인트</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -465,18 +465,12 @@
                     <div class="col-md-6 bd-grey mobile-m2">
                         <div class="flex-side">
                             <div class="flex-box mobile-cul">
-                                <h3 class="cash-title">광고</h3>
+                                <h3 class="cash-title">광고주 유입량</h3>
                                 <div class="flex-box cul--w280c">
                                     <div class="circle-wrap flex-box">
                                         <div class="circle blue"></div>
                                         <div class="circle-sub">
-                                            <p>상품 판매량</p>
-                                        </div>
-                                    </div>
-                                    <div class="mg-l2p circle-wrap flex-box">
-                                        <div class="circle"></div>
-                                        <div class="circle-sub">
-                                            <p>광고 시청 수</p>
+                                            <p>광고주 수</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,128 +483,76 @@
                             </div>
                         </div>
                         <div class="cash-sub">
-                            <p>날짜별 광고 클릭 및 시청 완료 횟수의 통계입니다.</p>
+                            <p>날짜별 광고주 유입량입니다.</p>
                         </div>
-                        <canvas id="adChart"></canvas>
+                        <canvas id="adminChart"></canvas>
                     </div>
+                    <!-- 광고주 리스트 -->
                     <div class="col-md-6 bd-grey">
                         <div class="flex-side">
                             <div class="flex-box mobile-cul">
-                                <h3 class="cash-title">광고리스트</h3>
-                                <div class="flex-box">
-                                    <div class="circle-wrap flex-box">
-                                        <div class="circle blue"></div>
-                                        <div class="circle-sub">
-                                            <p>등록완료</p>
-                                        </div>
-                                    </div>
-                                    <div class="mg-l2p circle-wrap flex-box">
-                                        <div class="circle"></div>
-                                        <div class="circle-sub">
-                                            <p>신청</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h3 class="cash-title">광고주 리스트</h3>
                             </div>
                             <div class="cash-more">
                                 <a href="#">더보기</a>
                             </div>
                         </div>
                         <div class="cash-sub">
-                            <p>상세보기를 클릭해 더 많은 상품 리스트를 찾아보세요.</p>
+                            <p>더보기를 클릭해 더 많은 광고주 리스트를 찾아보세요.</p>
                         </div>
-                        <div class="ad-table">
+                        <div class="ad-table admin-table">
                             <table>
                                 <colgroup>
+                                    <col width="20%%">
                                     <col width="15%">
-                                    <col width="17%">
-                                    <col width="17%">
-                                    <col width="17%">
-                                    <col width="24%">
-                                    <col width="10%">
+                                    <col width="25%">
+                                    <col width="20%">
+                                    <col width="20%">
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th>광고명</th>
-                                        <th class="text-center ad-day">등록날짜</th>
-                                        <th>광고유형</th>
-                                        <th>마일리지<br>(광고단가)</th>
-                                        <th class="ad-click-mile">마일리지<br>(광고클릭 시)</th>
-                                        <th class="text-center">상태</th>
+                                        <th>이름</th>
+                                        <th>성별</th>
+                                        <th class="umail">이메일</th>
+                                        <th>연락처</th>
+                                        <th class="text-center">마일리지</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle"></div>
-                                        </td>
+                                        <td>홍길동</td>
+                                        <td>남자</td>
+                                        <td>searchid@naver.com</td>
+                                        <th class="umail">010-1234-5678</th>
+                                        <td class="text-center">500 포인트</td>
                                     </tr>
                                     <tr>
-                                        <td>엄청난광고엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle"></div>
-                                        </td>
+                                        <td>홍길동</td>
+                                        <td>남자</td>
+                                        <td>searchid@naver.com</td>
+                                        <th class="umail">010-1234-5678</th>
+                                        <td class="text-center">500 포인트</td>
                                     </tr>
                                     <tr>
-                                        <td>엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle blue"></div>
-                                        </td>
+                                        <td>홍길동</td>
+                                        <td>남자</td>
+                                        <td>searchid@naver.com</td>
+                                        <th class="umail">010-1234-5678</th>
+                                        <td class="text-center">500 포인트</td>
                                     </tr>
                                     <tr>
-                                        <td>엄청난광고엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle blue"></div>
-                                        </td>
+                                        <td>홍길동</td>
+                                        <td>남자</td>
+                                        <td>searchid@naver.com</td>
+                                        <th class="umail">010-1234-5678</th>
+                                        <td class="text-center">500 포인트</td>
                                     </tr>
                                     <tr>
-                                        <td>엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle blue"></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>엄청난광고엄청난광고</td>
-                                        <td class="text-center ad-day">
-                                            2020.10.01
-                                        </td>
-                                        <td>광고유형</td>
-                                        <td>1,000 포인트</td>
-                                        <td class="ad-click-mile">500 포인트</td>
-                                        <td class="text-center">
-                                            <div class="circle blue"></div>
-                                        </td>
+                                        <td>홍길동</td>
+                                        <td>남자</td>
+                                        <td>searchid@naver.com</td>
+                                        <th class="umail">010-1234-5678</th>
+                                        <td class="text-center">500 포인트</td>
                                     </tr>
                                 </tbody>
                             </table>

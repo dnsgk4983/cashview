@@ -361,6 +361,12 @@ ul{
 .ad-table .circle{
     margin: 0 auto;
 }
+#userChart{
+    height: 265px !important;
+}
+#adminChart{
+    height: 264px !important;
+}
 
 /* 광고 리스트 페이지 */
 
@@ -507,6 +513,12 @@ ul{
     
     .ad-table tbody td:not(:nth-child(1)){
         text-align: center;
+    }
+    .umail{
+        display: none;
+    }
+    .ad-table td{
+        font-size: .6em;
     }
 }
 
