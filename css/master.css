@@ -47,6 +47,9 @@ p, h1, h2, h3{
     color: #2e2e2e;
 }
 
+.mgb--24{
+    margin-bottom: 1.5em;
+}
 .mg-b2{
     margin-bottom: 2em;
 }
@@ -55,6 +58,9 @@ p, h1, h2, h3{
 }
 .pd-b3{
     padding-bottom: 3em;
+}
+.pd-b5{
+    padding-bottom: 5em;
 }
 
 .mg-l2p{
@@ -81,14 +87,14 @@ header{
 }
 
 .login-text{
-    color:#ccc;
+    color:#F6F6F6;
 }
 .name{
     color:#000;
     font-weight: 800;
 }
 .logo-bg{
-    background: #ccc;
+    background: #F6F6F6;
 }
 .icon{
     background: url(../img/icon/login_grey.png)#F6F6F6;
@@ -371,41 +377,60 @@ ul{
 /* 광고 리스트 페이지 */
 
 
-.ad-app-wrap{
+.ad-app-table{
     border: 1px solid #EBEBEB;
     border-radius: 10px;
     padding: 1.8em 3em;
     background: #ffffff;
 }
-.aa-num{
-    width: 7%;
-    text-align: center;
+
+.ad-app-table table{
+    width: 100%;
+    font-weight: 600;
 }
-.aa-num p{
-    color: #878787;
+
+.ad-app-table table thead{
+    border-bottom: 1px solid #ebebeb;
 }
-.aa-name, .aa-mile, .aa-click{
-    width: 21%;
-}
-.aa-day, .aa-type, .aa-stat, .aa-click-count{
-    width: 11%;
-}
-.aa-day{
-    text-align: center;
-}
-.aa-view{
-    width: 12%;
-}
-.ad-app-list-title p{
+
+.ad-app-table table thead th{
     color: #878787;
     font-size: .9375em;
 }
-.ad-app-list li{
+
+.ad-app-table table tr{
     height: 3em;
 }
 
-.ad-app-list li p{
+.ad-app-table table tbody{
     font-size: .9375em;
+}
+
+.ad-app-table table thead th:first-child,
+.ad-app-table table tbody td:first-child{
+    color: #878787;
+    text-align: center;
+    font-size: .9375em;
+}
+
+.ad-app a{
+    display: block;
+    padding: .75em 1em;
+    background: #ff8200;
+    border-radius: 5px;
+    color: #fff !important;
+}
+.app-stat{
+    padding: .5em .9375em;
+    border-radius: 5px;
+    background: rgba(255, 130, 0, .1);
+    font-size: .8125em;
+    text-align: center;
+    color: #ff8200;
+}
+.app-stat.suc{
+    background: rgba(76, 158, 255, .1);
+    color: #4C9EFF;
 }
 
 
@@ -417,14 +442,6 @@ ul{
         margin-right: 0;
     }
 }
-
-@media(min-width:1615px){
-    .content .container.wd-1400{
-        width: 1400px;
-        max-width: 1400px;
-    }
-}
-
 
 @media(max-width:1130px){
     .content .row{
@@ -439,6 +456,14 @@ ul{
     .content .col-md-6{
         width: 95%;
         max-width: 95%;
+    }
+    .dnone-1130{
+        display: none;
+    }
+}
+@media(max-width: 992px){
+    .dnone-992{
+        display: none;
     }
 }
 
@@ -517,8 +542,35 @@ ul{
     .umail{
         display: none;
     }
-    .ad-table td{
+
+    
+    .pr-table td, .ad-table td{
         font-size: .6em;
+    }
+
+    .ad-app-table table{
+        font-size: .6em;
+        letter-spacing: -1px;
+    }
+    .dnone-586{
+        display: none;
+    }
+    .ad-app a{
+        font-size: .8125em;
+    }
+    .content{
+        padding: 2em 0;
+    }
+}
+
+@media(max-width:400px){
+    .dnone-400{
+        display: none;
+    }
+}
+@media(max-width:360px){
+    .dnone-360{
+        display: none;
     }
 }
 

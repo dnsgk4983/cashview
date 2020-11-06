@@ -127,43 +127,8 @@ $(document).ready(function () {
             }
         }
     });
-
-    var urx = document.getElementById('userChart').getContext('2d');
-
-    var uchart = new Chart(urx, {
-        type: 'bar',
-
-        data: {
-            labels: ['10.20', '10.20', '10.20', '10.20', '10.20', '10.20', '10.20'],
-            datasets: [{
-                label: "",
-                backgroundColor: "#fa8200",
-                data: [400, 500, 200, 400, 400, 300, 500]
-            }
-        ]},
-        options: {
-            legend: {
-                display: false,
-            },
-            scales: {
-                xAxes: [{
-                    gridLines: {
-                        color: 'rgba(0,0,0,0)',
-                        lineWidth: 0
-                    }
-                }],
-                yAxes: [{
-                    display: true,
-                    ticks: {
-                        min: 0,
-                        stepSize: 100,
-                        fontSize: 13,
-                        fontColor: '#878787'
-                    },
-                }]
-            }
-        }
-    });var adrx = document.getElementById('adminChart').getContext('2d');
+    
+    var adrx = document.getElementById('adminChart').getContext('2d');
 
     var adchart = new Chart(adrx, {
         type: 'bar',
@@ -185,7 +150,8 @@ $(document).ready(function () {
                     gridLines: {
                         color: 'rgba(0,0,0,0)',
                         lineWidth: 0
-                    }
+                    },
+                    fontSize: 13
                 }],
                 yAxes: [{
                     display: true,
