@@ -129,6 +129,9 @@ header{
     /* 눈아파서 어둡게변경 추후에 f6f6f6로 변경 */
     padding-top: 5em;
 }
+.text-center{
+    text-align: center;
+}
 
 /* 왼쪽 네비 영역 */
 .slde-nav{
@@ -291,6 +294,7 @@ ul{
     height: 2.5em;
 }
 .pr-table th{
+    border-bottom: 1px solid #ebebeb;
     color: #878787;
     font-size: .75em;
 }
@@ -342,6 +346,7 @@ ul{
     height: 2.5em;
 }
 .ad-table th{
+    border-bottom: 1px solid #ebebeb;
     color: #878787;
     font-size: .75em;
 }
