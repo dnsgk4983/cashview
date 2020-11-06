@@ -47,6 +47,9 @@ p, h1, h2, h3{
     color: #2e2e2e;
 }
 
+.pd--0{
+    padding: 0;
+}
 .mgb--24{
     margin-bottom: 1.5em;
 }
@@ -75,6 +78,9 @@ header{
 
 .nav{
     display: flex;
+}
+.nav.nav-margin{
+    margin-right: 3.5%;
 }
 .logo{
     padding: 0 20px;
@@ -240,9 +246,7 @@ header{
     background: #FFFFFF;
 }
 
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1350px !important;
-}
+
 #prChart{
     height: 243px !important;
 }
@@ -421,18 +425,99 @@ ul{
     color: #fff !important;
 }
 .app-stat{
-    padding: .5em .9375em;
     border-radius: 5px;
+    width: 65%;
+    margin: 0 auto;
+    height: 30px;
     background: rgba(255, 130, 0, .1);
     font-size: .8125em;
     text-align: center;
     color: #ff8200;
+    line-height: 30px;
 }
 .app-stat.suc{
     background: rgba(76, 158, 255, .1);
     color: #4C9EFF;
 }
 
+/* modal css */
+#ad-modal{
+    top: 30%;
+}
+/* ad modal content */
+#ad-modal .modal-content{
+    padding: 1.5em 2.5em 2.5em;
+    position: relative;
+}
+#ad-modal .modal-header{
+    border-color: #2E2E2E;
+}
+#ad-modal .modal-header h3{
+    font-size: 1.5em;
+}
+#ad-modal .modal-header .close{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+#ad-modal .ad-del button{
+    border: none;
+    border-radius: 5px;
+    background: #EBEBEB;
+    padding: 0.625em;
+}
+#ad-modal .ad-del button img{
+    margin-right: .625em;
+}
+#ad-modal .ad-del button span{
+    font-size: .9375em;
+}
+
+.ad-text{
+    font-size:14px;
+}
+.point-main-text{
+    font-size: 15px;
+    color:#878787;
+}
+.point-main-sub-text{
+    font-size: 15px;
+    color:#2E2E2E;
+}
+
+.ad-line{
+    width: 100%;
+    height: 2px;
+    background: #EBEBEB;
+}
+.ad-point-box{
+    display: flex;
+}
+
+.ad-point-box>div{
+    width: 48%;
+    margin:0 auto;
+}
+
+.btn-orange{
+    background:#ff8200;
+    color:#fff;
+}
+
+.line-del{
+    border: none !important;
+}
+
+.modal-footer{
+    justify-content: center;
+}
+
+
+@media(min-width:1550px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1350px;
+    }
+}
 
 @media(max-width:1495px){
     .slde-nav span{
@@ -440,6 +525,18 @@ ul{
     }
     .icon-box{
         margin-right: 0;
+    }
+}
+
+@media(min-width:1240px){
+    #ad-modal .modal-dialog{
+        max-width: 33%;
+    }
+}
+@media(max-width:1240px){
+    .ad-app-table table thead th,
+    .ad-app-table table tbody{
+        font-size: .875em;
     }
 }
 
@@ -464,6 +561,23 @@ ul{
 @media(max-width: 992px){
     .dnone-992{
         display: none;
+    }
+    .login-content{
+        display: none;
+    }
+}
+
+@media(max-width: 840px){
+    .ad-app-table table tbody,
+    .ad-app-table table thead th{
+        font-size: .75em;
+    }
+    .app-stat{
+        height: 24px;
+        line-height: 24px;
+    }
+    .content .row{
+        margin: 0;
     }
 }
 
@@ -493,6 +607,18 @@ ul{
         max-width: 100%;
     }
 
+}
+
+@media(max-width: 600px){
+    .ad-app-table table tbody,
+    .ad-app-table table thead th{
+        font-size: .675em;
+    }
+    .app-stat{
+        width: 60%;
+        height: 20px;
+        line-height: 20px;
+    }
 }
 
 @media(max-width:586px){
@@ -558,8 +684,28 @@ ul{
     .ad-app a{
         font-size: .8125em;
     }
+
+    .ad-app-table{
+        padding: 1.8em 0;
+    }
+    .ad-app-table table tr{
+        height: 4em;
+    }
+    
+    /* 페이지 상단 헤더 수정 */
+    .logo img{
+        width: 65%;
+    }
+    .slde-nav li{
+        padding: .4em;
+    }
+    /* margin bottom 24 --> 16 */
+    .mgb--24{
+        margin-bottom: 1em;
+    }
+    /* 컨텐츠 영역 */
     .content{
-        padding: 2em 0;
+        padding: 1em 0;
     }
 }
 

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta property="og:title" content="">
+        <!-- meta tag -->
+        
+        <!-- chart -->
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/master.css">
+        <!-- css -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="img/top_logo.png" alt="">
+            </div>
+            <div class="nav nav-margin">
+                <div class="login-content">
+                    <div class="icon"></div>
+                    <div class="login-text">
+                        <p><span class="name">홍길동</span>님, 안녕하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <section class="layout">
+        <div class="slde-nav pd-b2">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <div class="icon-box home"></div>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box info"></div>
+                        <span>내 정보</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box pr"></div>
+                        <span>상품</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon-box ad"></div>
+                        <span>광고</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a href="#">
+                    <div class="icon-box lg-out"></div>
+                    <span>캐시뷰 로그아웃</span>
+                </a>
+            </div>
+        </div>
+        <div class="content pd-b3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 flex-side mgb--24 pd--0">
+                        <div class="ad-list-title cash-title">
+                            <h3>광고</h3>
+                        </div>
+                        <div class="ad-app">
+                            <a href="#"data-toggle="modal" data-target="#ad-modal">광고 등록 신청</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ad-app-table">
+                        <table>
+                            <colgroup>
+                                <col width="8%">
+                                <col width="18%">
+                                <col width="10%">
+                                <col width="14%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>no.</th>
+                                    <th>광고명</th>
+                                    <th class="dnone-1130">등록날짜</th>
+                                    <th class="dnone-400">마일리지<br>(광고단가)</th>
+                                    <th class="dnone-1130">마일리지<br>(광고클릭 시)</th>
+                                    <th class="dnone-992">광고 유형</th>
+                                    <th class="dnone-360">클릭 수</th>
+                                    <th class="dnone-586">시청완료 수</th>
+                                    <th class="text-center">상태</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat">
+                                            신청
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat">
+                                            신청
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>엄청난광고엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>엄청난광고</td>
+                                    <td class="dnone-1130">2020.10.01</td>
+                                    <td class="dnone-400">1,000 포인트</td>
+                                    <td class="dnone-1130">500 포인트</td>
+                                    <td class="dnone-992">광고유형</td>
+                                    <td class="dnone-360">14,000회</td>
+                                    <td class="dnone-586">6,000회</td>
+                                    <td>
+                                        <div class="app-stat suc">
+                                            등록완료
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Modal -->
+        
+                    <div class="modal fade" id="ad-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <h3>엄청난 광고명</h3>
+                                    <div class="ad-del">
+                                        <button type="button" onclick="delMyAd()">
+                                        <img src="img/icon/ico_del.png" alt="삭제 아이콘"><span>광고 삭제</span></button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="ad-content">
+                                        <div class="ad-img">
+                                            
+                                        </div>
+                                        <div class="ad-text">
+                                            <p>불러 남은 소녀들의 없이 잠, 계십니다. 나의 쓸쓸함과 별 아스라히 없이
+                                                있습니다. 멀리 된 마리아 까닭입니다. 마디씩 마리아 릴케 별을 버리었
+                                                습니다. 밤이 새겨지는 이제 별 아침이 지나가는 잠, 하늘에는 멀리 까닭
+                                                입니다. 한 프랑시스 소학교 봄이 가난한 까닭입니다. 무성할 않은 헤는
+                                                버리었습니다.
+                                                </p>
+                                        </div>    
+                                    </div>
+                                    <!-- ad-content  -->
+                                    <div class="ad-point">
+                                        <div class="ad-point-box">
+                                            <div class="ad-price">
+                                                <p class="point-main-text">마일리지 설정(광고 단가)</p>
+                                                <p class="point-main-sub-text">1000 포인트</p>
+                                                <div class="ad-line"></div>
+                                            </div>
+                                            <div class="ad-cpc">
+                                                <p class="point-main-text">마일리지 설정(광고클릭시)</p>
+                                                <p class="point-main-sub-text">500 포인트</p>
+                                                <div class="ad-line"></div>
+                                            </div>
+                                        </div>
+                                        <div class="ad-point-box">
+                                            <div class="ad-price">
+                                                <p class="point-main-text">카테고리</p>
+                                                <p class="point-main-sub-text">식품/요리</p>
+                                                <div class="ad-line"></div>
+                                            </div>
+                                            <div class="ad-cpc">
+                                                <p class="point-main-text">광고 유형</p>
+                                                <p class="point-main-sub-text">광고 유형 이름</p>
+                                                <div class="ad-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer line-del">
+                            
+                                    <button type="button" class="btn btn-orange">광고 수정</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+  
+  
+    </section>
+
+    <!-- bootstrap -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- chart.js -->
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
