@@ -2599,8 +2599,10 @@ input[type=checkbox]:checked + label p{
 	font-family: inherit;
 	line-height: normal;
 	vertical-align: middle;
-	background-color: #f5f5f5;
-    border-radius: .25em;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
