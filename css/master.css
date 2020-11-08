@@ -31,7 +31,8 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: 'TmoneyRoundR';
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 a{
@@ -81,6 +82,10 @@ header{
     padding: 0 1em;
 }
 
+button[type=button]{
+    outline: none;
+}
+
 .nav{
     display: flex;
 }
@@ -99,6 +104,9 @@ header{
 
 .login-text{
     color:#F6F6F6;
+}
+.login-text p{
+    color: #B5B5B5;
 }
 .name{
     color:#000;
@@ -135,7 +143,7 @@ header{
 .slde-nav{
     width: 10%;
     height: auto;
-    padding: 0 .85em;
+    padding: 1em .85em;
     /* height auto 로 무조건 변경 */
 }
 .content{
@@ -461,6 +469,16 @@ ul{
     font-size: .9375em;
 }
 
+.ad-app-table .check_wrap label{
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+.ad-app-table .check_wrap p{
+    color: #878787;
+    margin-left: 7px;
+}
+
 .ad-app a{
     display: block;
     padding: .75em 1em;
@@ -523,6 +541,9 @@ ul{
     position: absolute;
     right: -30px;
     top: -30px;
+}
+.modal .close:hover{
+    opacity: 1;
 }
 .ad-del button{
     border: none;
@@ -732,7 +753,6 @@ ul{
 }
 .mail{
     padding-bottom: 10px;
-    border-bottom: 1px solid #EBEBEB;
 }
 .mail p{
     padding-top: 0 !important;
@@ -805,7 +825,7 @@ input[type=checkbox]:checked + label span{
 .gen-btn button{
     width: 49%;
     /* max-width: 133px; */
-    padding: .25em .5em;
+    padding: .5em;
     background: #fff;
     border: 1.5px solid #B5B5B5;
     color: #B5B5B5;
@@ -904,10 +924,10 @@ input[type=checkbox]:checked + label span{
     border: none;
     border-bottom: 1px solid #ebebeb;
 }
-.page1 select, .page3 select, .page6 select{
+.page3 select, .page6 select{
     color: #2E2E2E;
 }
-.page1 input::placeholder, .page3 input::placeholder, .page6 input::placeholder{
+.page3 input::placeholder, .page6 input::placeholder{
     color: #2E2E2E !important;
     font-weight: 600;
 }
@@ -918,8 +938,16 @@ input[type=checkbox]:checked + label span{
     font-weight: 600;
     color: #878787;
 }
+
+.page1 input::placeholder, .page1 select{
+    color: #B5B5B5;
+}
+
 .option .col-lg-6{
     padding: 0;
+}
+.option.pd--0  .col-lg-6{
+    padding: 0 15px;
 }
 .option-1{
     max-width: 283px;
@@ -1141,6 +1169,7 @@ textarea{
     margin-left: 5px;
 }
 
+
 /* index3 */
 
 
@@ -1207,7 +1236,7 @@ textarea{
 }
 
 .yun-table table th:nth-child(2){
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .yun-table table a{
@@ -1244,11 +1273,14 @@ textarea{
     padding: 0;
 }
 .title-1{
-    color: #2E2E2E !important;
+    color: #787878 !important;
     position: relative;
     margin-right:.6em ;
 }
-.title-1::after{
+.title-1.active{
+    color: #2E2E2E !important;
+}
+.page7-title .title-1.active::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -1361,7 +1393,7 @@ textarea{
 #user-regi .modal-header .close{
     position: absolute;
 }
-#user-regi .modal-header .close:hover{
+.modal-header .close:hover{
     opacity: 1;
 }
 #user-regi .modal-header h3{
@@ -1373,7 +1405,7 @@ textarea{
 }
 
 #user-regi{
-    font-size: .9375em;
+    font-size: 13px;
     font-weight: 600;
     padding-top: 8%;
     padding-right: 0 !important;
@@ -1484,6 +1516,7 @@ textarea{
     height: 3em;
     border: none;
     border-bottom: 1px solid #ebebeb;
+    margin-bottom: 1.75em;
 }
 .my-info .col-lg-12{
     padding: 0;
@@ -1491,6 +1524,119 @@ textarea{
 .my-info .yun-row .col-lg-6{
     padding: 0;
 }
+
+.my-info p{
+    color: #878787;
+}
+
+/* 등급 관리 모달창 */
+#user-rating{
+    padding: 10% 15px 0;
+}
+#user-rating .modal-dialog{
+    max-width: 700px;
+    margin: 0 auto;
+}
+#user-rating .modal-content{
+    padding: 1rem
+}
+#user-rating .modal-header{
+    padding: 0;
+    padding-bottom: 1rem;
+    border-color: #2E2E2E;
+}
+
+#user-rating input{
+    height: 3em;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+}
+#user-rating input::placeholder{
+    font-weight: 600;
+}
+
+#user-rating select{
+    width: 100%;
+    outline: none;
+    height: 3em;
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 1.75em;
+    font-weight: 600;
+}
+
+#user-rating .rating-cash input{
+    margin-bottom: 1.75em;
+}
+
+/* 광고주 모달 */
+#adver-regi .modal-content{
+    padding: 1.75em 2.25em;
+    border-radius: 10px;
+}
+#adver-regi .modal-header{
+    padding: 0;
+    border-color: #2E2E2E;
+    padding-bottom: 1.25em;
+    align-items: center;
+}
+
+#adver-regi .modal-header .close{
+    position: absolute;
+}
+
+#adver-regi .modal-header h3{
+    font-size: 1.5em;
+}
+
+#adver-regi .ad-info > div > div > div {
+    width: 49%;
+}
+
+#adver-regi{
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 8%;
+    padding-right: 0 !important;
+}
+
+#adver-regi p{
+    color: #878787;
+}
+
+#adver-regi input{
+    height: 2.9335em;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+}
+#adver-regi input::placeholder{
+    color: #2E2E2E;
+    font-weight: 600;
+}
+
+#adver-regi .adi-gender button{
+    width: 49%;
+    /* max-width: 133px; */
+    padding: .5em;
+    background: #fff;
+    border: 1px solid #B5B5B5;
+    color: #B5B5B5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline-style: none !important;
+}
+#adver-regi .man.active{
+    border-color: #ff8200;
+    color: #ff8200;
+}
+#adver-regi .girl.active{
+    border-color: #FF8200;
+    color: #FF8200;
+}
+#adver-regi .modal-footer{
+    border: none;
+}
+
 
 /* Oon media */
 @media(min-width:1550px){
@@ -1519,7 +1665,7 @@ textarea{
         display: none;
     }
     h3{
-        font-size: 1.25em;
+        font-size: 1em;
     }
 }
 
@@ -1621,7 +1767,7 @@ textarea{
     .ad-app-table{
         padding: 0 .75em;
     }
-    #user-regi .modal-header .close{
+    .modal-header .close{
         right: 16px;
         top: 16px;
     }
@@ -1650,9 +1796,9 @@ textarea{
     .pr-day{
         display: none;
     }
-    .modal .close{
-        top: -15px;
-        right: -15px;
+    /* 사용자 삭제 확인 모달 */
+    #user-check{
+        padding-top: 25%;
     }
 }
 
@@ -1660,15 +1806,8 @@ textarea{
     #ad-modal{
         padding-top: 12%;
     }
-    #ad-modal .close{
-        right: 1em;
-        top: 1em;
-    }
     #del-ad{
         padding-top: 25%;
-    }
-    .mileage .col-lg-6{
-        /* padding: 0; */
     }
 }
 
@@ -1766,7 +1905,7 @@ textarea{
         display: none;
     }
     .bd-grey{
-        padding: 1.5em 0;
+        padding: 1.5em 1em;
     }
     .bd-grey .col-md-12{
         padding: 0;
@@ -1795,6 +1934,13 @@ textarea{
     .my-info{
         padding: 3em 3.125em;
     }
+
+    /* 홈 circle-icon margin */
+    .circle-wrap{
+        margin-top: 3px;
+    }
+
+    /* */
 }
 
 @media(min-width:414px){
@@ -1855,6 +2001,9 @@ textarea{
     .modal-body{
         padding: 0;
     }
+    #user-rating .modal-body{
+        padding: 1em 0;
+    }
     #del-ad > .modal-dialog{
         width: 95%;
         margin: 0 auto;
@@ -1909,6 +2058,11 @@ textarea{
     .page1 select, .page3 select, .page6 select{
         font-size: .8125em;
     }
+    /* 사용자 정보 모달 수정 */
+    #user-regi .modal-body{
+        padding: 1em 0;
+    }
+    
 }
 
 @media(max-width:360px){
@@ -1960,6 +2114,17 @@ textarea{
     }
     .mgb--24{
         margin-bottom: 0;
+    }
+
+    /* 홈 테이블 글자크기 수정 */
+    .ad-table th{
+        font-size: 10px;
+    }
+    .pr-table td, .ad-table td{
+        letter-spacing: -1px;
+    }
+    .mg-l2p{
+        margin-left: 3px;
     }
 }
 
@@ -2150,11 +2315,12 @@ textarea{
         font-size: 1.2em !important;
     }
 
-
-
-
     .information{
         padding: 3%;
+    }
+
+    .cash-sub p{
+        margin-bottom: 1.5em;
     }
     
 }
@@ -2254,9 +2420,6 @@ input[type=checkbox]:checked + label p{
     border: 2px solid #ff8200;
 }
 
-.option.row{
-    margin: 0;
-}
 
 
 .page7-table table{
@@ -2346,6 +2509,13 @@ input[type=checkbox]:checked + label p{
     .title-2{
         margin-left: .5em;
     }
+    /* 사용자 정보 모달 */
+    #user-regi p{
+        font-size: 12px;
+    }
+    .ad-info input::placeholder{
+        font-size: 12px;
+    }
 }
 @media(max-width:280px){
     .page7-title{
@@ -2377,4 +2547,69 @@ input[type=checkbox]:checked + label p{
     .page7 .d-flex a {
         margin: 0 1.25em;
     }
+
+    /* 사용자 정보 모달 */
+    .adi-first > div,
+    .adi-sec > div,
+    .adi-third > div{
+        flex-direction: column;
+    }
+    #user-regi .ad-info > div > div > div{
+        width: 100%;
+    }
+    .adi-mile{
+        margin-top: 1em;
+    }
+    
 }
+
+.upload-name{
+    width: 90%;
+}
+.filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+
+.filebox label {
+	display: inline-block;
+	padding: .5em .75em;
+	color: #4C9EFF;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #edf5ff;
+	cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0;
+    font-size: .75em;
+}
+
+/* named upload */
+.filebox .upload-name {
+	display: inline-block;
+	padding: .5em 0;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+    border-radius: .25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #B5B5B5;
+    font-weight: 600;
+}
+
+.darkfilebox .upload-name{
+    color: #2E2E2E;
+}
+
+

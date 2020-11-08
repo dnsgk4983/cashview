@@ -122,16 +122,25 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 file">
                         <p>광고 파일</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="p-2">
-                                <p>파일 경로</p>
-                            </div>
-                            <div class="p-2">
-                                <button type="button" class="file-btn">
-                                    파일찾기
-                                </button>
-                            </div>
+                        <div class="filebox flex-box">
+                            <input class="upload-name" value="파일 경로" disabled="disabled">
+                            <label for="ex_filename">파일찾기</label>
+                            <input type="file" id="ex_filename" class="upload-hidden">
                         </div>
+                        <script>
+                            var fileTarget = $('.filebox .upload-hidden');
+
+                            fileTarget.on('change', function(){
+                                if(window.FileReader){
+                                    var filename = $(this)[0].files[0].name;
+                                } else {
+                                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                                }
+
+                                $(this).siblings('.upload-name').val(filename);
+                            });
+
+                        </script>
                     </div>
                 </div>
                 <div class="row">

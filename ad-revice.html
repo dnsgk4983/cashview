@@ -68,7 +68,7 @@
                 </a>
             </div>
         </div>
-        <div class="content pd--3">
+        <div class="content pd--3 page3">
             <div class="container">
                 <div class="title-box">
                         <div class="col-lg-12 col-12 title">
@@ -122,16 +122,25 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 file">
                         <p>광고 파일</p>
-                        <div class="d-flex justify-content-between">
-                            <div class="p-2">
-                                <p>파일 경로</p>
-                            </div>
-                            <div class="p-2">
-                                <button type="button" class="file-btn">
-                                    파일찾기
-                                </button>
-                            </div>
+                        <div class="filebox flex-box darkfilebox">
+                            <input class="upload-name" value="엄청난광고.mp4" disabled="disabled">
+                            <label for="ex_filename">파일찾기</label>
+                            <input type="file" id="ex_filename" class="upload-hidden">
                         </div>
+                        <script>
+                            var fileTarget = $('.filebox .upload-hidden');
+
+                            fileTarget.on('change', function(){
+                                if(window.FileReader){
+                                    var filename = $(this)[0].files[0].name;
+                                } else {
+                                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                                }
+
+                                $(this).siblings('.upload-name').val(filename);
+                            });
+
+                        </script>
                     </div>
                 </div>
                 <div class="row">
@@ -150,7 +159,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 text-box">
                         <p>광고 정보</p>
-                        <textarea class="information">불러 남은 소녀들의 없이 잠, 계십니다. 나의 쓸쓸함과 별 아스라히 없이 있습니다. 멀리 마리아 까닭입니다. 마디씩 마리아 릴케 별을 버리었습니다. 밤이 새겨지는 이제 별 아침이 지나가는 잠, 하늘에는 멀리 까닭입니다.</textarea>
+                        <textarea class="information">광고 정보를 입력해 주세요.</textarea>
                     </div>
                 </div>
             </div>

@@ -12,6 +12,7 @@ $(document).ready(function () {
         $('.girl').addClass('active');
     });
     
+
     // 상품 차트
     var prx = document.getElementById('prChart').getContext('2d');
 

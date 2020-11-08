@@ -79,15 +79,15 @@
                <div class="col-lg-12 col-12 page7">
                     <div class="d-flex justify-content-between page7-title">
                         <div class="d-flex">
-                            <a href="user-admin.html" class="title-1">
+                            <a href="user-admin.html" class="title-1 active">
                                 <h4>사용자</h4>
                             </a>
-                            <a href="#" class="title-2">
+                            <a href="#" class="title-1">
                                 <h4>광고주</h4>
                             </a>
                         </div>
                         <div class="d-flex top-btn">
-                            <button type="button" class="top-btn-1">
+                            <button type="button" class="top-btn-1" data-toggle="modal" data-target="#user-rating">
                                 <p>등급 관리</p>
                             </button>
                             <button type="button" class="top-btn-2" data-toggle="modal" data-target="#user-regi">
@@ -382,8 +382,39 @@
                                     </div>
                                     <div class="adi-mile">
                                         <p>마일리지</p>
-                                        <input type="text" placeholder="500 마일리지">
+                                        <input type="text" placeholder="500 마일리지" id="adi_mile" onblur="mile(this)">
                                     </div>
+                                    <script>
+                                        var prefix=" 마일리지"
+                                        var wd
+                                        function mile(thisone){
+                                            if (thisone.value.charAt(0)=="마일리지")
+                                            return
+                                            wd="w"
+                                            var tempnum=thisone.value
+                                            for (i=0;i<tempnum.length;i++){
+                                                if (tempnum.charAt(i)=="."){
+                                                    wd="d"
+                                                    break
+                                                }
+                                            }
+
+                                            if (tempnum.charAt(tempnum.length-2)=="."){
+                                                thisone.value=tempnum+"0" +prefix
+                                            }else{
+                                                tempnum=Math.round(tempnum*100)/100
+                                                thisone.value=tempnum+prefix
+                                                }
+                                            }
+                                        $('.ad-info input').focus(function(){
+                                            $(this).css('color', '#2e2e2e');
+                                            $(this).css('fontWeight', '600');
+                                        });
+                                        $('.ad-info input').blur(function(){
+                                            $(this).css('color', '#2e2e2e');
+                                            $(this).css('fontWeight', '600');
+                                        });
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -406,10 +437,45 @@
                         <p class="del-check">선택하신 사용자를 삭제하시겠습니까?</p>
                     </div>
                     <div class="flex-side">
-                        <button type="button" class="del-no">아니오</button>
+                        <button type="button" class="del-no" data-dismiss="modal">아니오</button>
                         <button type="button" class="del-yes">네</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal fade" id="user-rating" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <h3>등급 관리</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rating-title">
+                            <p>등급명</p>
+                            <select>
+                                <option value="1">등급을 선택해 주세요.</option>
+                            </select>
+                        </div>
+                        <div class="rating-cash">
+                            <p>캐시비율</p>
+                            <input type="text" placeholder="캐시비율을 입력해 주세요.">
+                        </div>
+                        <div class="rating-condition">
+                            <p>등급별 조건</p>
+                            <input type="text" placeholder="조건(추천인 수)를 입력해 주세요.">
+                        </div>
+                    </div>
+                    <div class="modal-footer info-revice">
+                
+                        <button type="button" class="btn btn-orange">수정하기</button>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
