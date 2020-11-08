@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta property="og:title" content="">
+        <!-- meta tag -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <!-- chart -->
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/master.css">
+        <!-- css -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="img/top_logo.png" alt="">
+            </div>
+            <div class="nav">
+                <div class="login-content">
+                    <div class="icon">
+                        <img src="img/icon/login_grey.png" alt="login">
+                    </div>
+                    <div class="login-text">
+                        <p><span class="name">홍길동</span>님, 안녕하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <section class="layout">
+        <div class="slde-nav">
+            <ul>
+                <li class="li-home">
+                    <a href="#">
+                        <div class="icon-box home"></div>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li class="li-info">
+                    <a href="#">
+                        <div class="icon-box info"></div>
+                        <span>내 정보</span>
+                    </a>
+                </li>
+                <li class="li-pr">
+                    <a href="#">
+                        <div class="icon-box pr"></div>
+                        <span>상품</span>
+                    </a>
+                </li>
+                <li class="li-ad">
+                    <a href="#">
+                        <div class="icon-box ad"></div>
+                        <span>광고</span>
+                    </a>
+                </li>
+                <li class="li-user active">
+                    <a href="#">
+                        <div class="icon-box user"></div>
+                        <span>사용자/광고주</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a href="#">
+                    <div class="icon-box lg-out"></div>
+                    <span>캐시뷰 로그아웃</span>
+                </a>
+            </div>
+        </div>
+        <div class="content pd--5">
+           <div class="container">
+               <div class="col-lg-12 col-12 page7">
+                    <div class="d-flex justify-content-between page7-title">
+                        <div class="d-flex">
+                            <a href="user-admin.html" class="title-1">
+                                <h4>사용자</h4>
+                            </a>
+                            <a href="#" class="title-2">
+                                <h4>광고주</h4>
+                            </a>
+                        </div>
+                        <div class="d-flex top-btn">
+                            <button type="button" class="top-btn-1">
+                                <p>등급 관리</p>
+                            </button>
+                            <button type="button" class="top-btn-2" data-toggle="modal" data-target="#user-regi">
+                                <p>사용자 등록</p>
+                            </button>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="container page7-table">
+                    <table>
+                       <colgroup>
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="30%">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                               <th class="text-center">no.</th>
+                               <th class="center-375">이름</th>
+                               <th class="none-414">성별</th>
+                               <th class="none-375">이메일</th>
+                               <th class="none-992">연락처</th>
+                               <th class="none-640">마일리지</th>
+                               <th class="s-color text-center">선택</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">12</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox12" >
+                                        <label for="img_checkbox12">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">11</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox11">
+                                        <label for="img_checkbox11">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">10</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox10">
+                                        <label for="img_checkbox10">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">09</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox9">
+                                        <label for="img_checkbox9">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">08</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox8">
+                                        <label for="img_checkbox8">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">07</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox7">
+                                        <label for="img_checkbox7">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">06</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox6">
+                                        <label for="img_checkbox6">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">05</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox5">
+                                        <label for="img_checkbox5">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">04</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox4">
+                                        <label for="img_checkbox4">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">03</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox3">
+                                        <label for="img_checkbox3">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">02</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox2">
+                                        <label for="img_checkbox2">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">01</td>
+                                <td class="center-375">홍길동</td>
+                                <td class="none-414">남자</td>
+                                <td class="none-375">searchidsearchid@naver.com</td>
+                                <td class="none-992">010-1234-5678</td>
+                                <td class="none-640">500 포인트</td>
+                                <td class="s-color">
+                                    <div class="check_wrap">
+                                        <input type="checkbox" id="img_checkbox1">
+                                        <label for="img_checkbox1">
+                                          <span></span>
+                                          <p>선택</p>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+           </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="user-regi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                        <h3>사용자 정보</h3>
+                        <div class="ad-del">
+                            <button type="button" data-toggle="modal" data-target="#user-check">
+                            <img src="img/icon/ico_del.png" alt="삭제 아이콘"><span>삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ad-info">
+                            <div class="adi-first">
+                                <div class="flex-side">
+                                    <div class="adi-name">
+                                        <p>이름</p>
+                                        <input type="text" placeholder="홍길동"
+                                        readonly>
+                                    </div>
+                                    <div class="adi-email">
+                                        <p>이메일</p>
+                                        <input type="text" placeholder="searchid@naver.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adi-sec">
+                                <div class="flex-side">
+                                    <div class="adi-password">
+                                        <p>비밀번호</p>
+                                        <input type="password" placeholder="비밀번호 입력">
+                                    </div>
+                                    <div class="adi-tel">
+                                        <p>연락처</p>
+                                        <input type="tel" placeholder="010-1234-5678">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="adi-third">
+                                <div class="flex-side">
+                                    <div class="adi-gender">
+                                        <p>성별</p>
+                                        <div class="flex-side">
+                                            <button type="button" class="man active">남자</button>
+                                            <button type="button" class="girl">여자</button>
+                                        </div>
+                                    </div>
+                                    <div class="adi-mile">
+                                        <p>마일리지</p>
+                                        <input type="text" placeholder="500 마일리지">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ad-content  -->
+                    </div>
+                    <div class="modal-footer info-revice">
+                
+                        <button type="button" class="btn btn-orange">광고 수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+
+        <div class="modal fade" id="user-check" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="ad-content">
+                        <p class="del-check">선택하신 사용자를 삭제하시겠습니까?</p>
+                    </div>
+                    <div class="flex-side">
+                        <button type="button" class="del-no">아니오</button>
+                        <button type="button" class="del-yes">네</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

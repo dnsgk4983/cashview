@@ -2,6 +2,15 @@ $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
+
+    $('.man').click(function(){
+        $('.girl').removeClass('active');
+        $('.man').addClass('active');
+    });
+    $('.girl').click(function(){
+        $('.man').removeClass('active');
+        $('.girl').addClass('active');
+    });
     
     // 상품 차트
     var prx = document.getElementById('prChart').getContext('2d');
@@ -165,5 +174,11 @@ $(document).ready(function () {
             }
         }
     });
-    $('#ad-modal').modal('show')
+    $('#ad-modal').modal('show');
+    $('#del-ad').modal('show');
+
+    // 성별 변경 버튼
+    
+    
 });
+

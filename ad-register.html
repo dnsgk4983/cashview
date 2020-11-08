@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta property="og:title" content="">
+        <!-- meta tag -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <!-- chart -->
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/master.css">
+        <!-- css -->
+    </head>
+    <body>
+        <header class="header">
+            <a href="home.html" class="logo">
+                <img src="img/top_logo.png" alt="">
+            </a>
+            <div class="nav">
+                <div class="login-content">
+                    <div class="icon">
+                        <img src="img/icon/login_grey.png" alt="login">
+                    </div>
+                    <div class="login-text">
+                        <p><span class="name">홍길동</span>님, 안녕하세요.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <section class="layout">
+        <div class="slde-nav">
+            <ul>
+                <li class="li-home">
+                    <a href="#">
+                        <div class="icon-box home"></div>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li class="li-info">
+                    <a href="#">
+                        <div class="icon-box info"></div>
+                        <span>내 정보</span>
+                    </a>
+                </li>
+                <li class="li-pr">
+                    <a href="#">
+                        <div class="icon-box pr"></div>
+                        <span>상품</span>
+                    </a>
+                </li>
+                <li class="li-ad active">
+                    <a href="#">
+                        <div class="icon-box ad"></div>
+                        <span>광고</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="logout">
+                <a href="#">
+                    <div class="icon-box lg-out"></div>
+                    <span>캐시뷰 로그아웃</span>
+                </a>
+            </div>
+        </div>
+        <div class="content pd--3">
+            <div class="container">
+                <div class="title-box">
+                        <div class="col-lg-12 col-12 title">
+                            <h4>광고 등록 신청</h4>
+                        </div>
+                </div>
+            </div>
+            <div class="contianer content-box page1">
+                <div class="row">
+                    <div class="col-lg-12 col-12 apply-name">
+                        <p>광고명</p>
+                        <input type="text" placeholder="광고명을 입력해 주세요.">
+                    </div>
+                </div>
+                <div class="row option">
+                    <div class="col-lg-6 col-12">
+                        <div class="option-1">
+                            <p>마일리지 설정 (광고단가)</p>
+                            <input type="text" placeholder="시청 완료 시 단가를 입력해 주세요.">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="option-2">
+                            <p>마일리지 설정 (광고클릭시)</p>
+                            <input type="text" placeholder="광고 클릭 시 단가를 입력해 주세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 category">
+                        <p>카테고리</p>
+                        <select class="form-control">
+                            <option class="op-1">
+                                <p>카테고리를 선택해 주세요.</p>
+                            </option>
+                            <option class="op-2">식품/요리</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 type">
+                        <p>광고 유형</p>
+                        <select class="form-control">
+                            <option class="op-1">
+                                <p>광고 유형을 선택해 주세요.</p>
+                            </option>
+                            <option class="op-2">광고 유형 이름</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 file">
+                        <p>광고 파일</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="p-2">
+                                <p>파일 경로</p>
+                            </div>
+                            <div class="p-2">
+                                <button type="button" class="file-btn">
+                                    파일찾기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-right file-icon">
+                        <div class="flex-end">
+                            <div class="check_wrap">
+                                <input type="checkbox" id="img_checkbox">
+                                <label for="img_checkbox">
+                                  <span></span>
+                                  <p>외부 URL 입력</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-box">
+                        <p>광고 정보</p>
+                        <textarea class="information">광고 정보를 입력해 주세요.</textarea>
+                    </div>
+                </div>
+            </div>
+           <div class="contaienr">
+               <div class="row clear-btn">
+                   <div class="col-lg-6 col-6 text-center">
+                       <button type="button" class="pre">
+                           이전화면
+                       </button>
+                   </div>
+                   <div class="col-lg-6 col-6 text-center">
+                       <button type="button" class="clear">
+                           신청하기
+                       </button>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

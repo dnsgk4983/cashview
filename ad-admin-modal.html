@@ -21,7 +21,7 @@
             <a href="#" class="logo">
                 <img src="img/top_logo.png" alt="">
             </a>
-            <div class="nav nav-margin">
+            <div class="nav">
                 <div class="login-content">
                     <div class="icon"></div>
                     <div class="login-text">
@@ -57,6 +57,12 @@
                         <span>광고</span>
                     </a>
                 </li>
+                <li class="li-user">
+                    <a href="#">
+                        <div class="icon-box user"></div>
+                        <span>사용자/광고주</span>
+                    </a>
+                </li>
             </ul>
             <div class="logout">
                 <a href="#">
@@ -68,16 +74,21 @@
         <div class="content pd-b3">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 flex-side mgb--24 pd--0">
+                    <div class="col-md-12 flex-side mgb--24">
                         <div class="ad-list-title cash-title">
                             <h3>광고</h3>
                         </div>
-                        <div class="ad-app">
-                            <a href="#"data-toggle="modal" data-target="#ad-modal">광고 등록 신청</a>
+                        <div class="flex-box">
+                            <div class="ad-category">
+                                <a href="#" data-toggle="modal" data-target="#ad-modal">카테고리 관리</a>
+                            </div>
+                            <div class="ad-app">
+                                <a href="#">광고 등록</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 ad-app-table">
-                        <table>
+                        <table data-click>
                             <colgroup>
                                 <col width="8%">
                                 <col width="18%">
@@ -103,7 +114,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr data-toggle="modal" data-id="1" data-traget="#ad-modal">
                                     <td>12</td>
                                     <td>엄청난광고</td>
                                     <td class="dnone-1130">2020.10.01</td>
@@ -113,8 +124,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat">
-                                            신청
+                                        <div class="ad-approval ad-non-approval">
+                                            <input type="checkbox" id="img_checkbox12">
+                                            <label for="img_checkbox12">
+                                              <span></span>
+                                              <p>미승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -128,8 +143,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat">
-                                            신청
+                                        <div class="ad-approval ad-non-approval">
+                                            <input type="checkbox" id="img_checkbox11">
+                                            <label for="img_checkbox11">
+                                              <span></span>
+                                              <p>미승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -143,8 +162,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox10" checked>
+                                            <label for="img_checkbox10">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -158,8 +181,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox9" checked>
+                                            <label for="img_checkbox9">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -173,8 +200,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox8" checked>
+                                            <label for="img_checkbox8">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -188,8 +219,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox7" checked>
+                                            <label for="img_checkbox7">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -203,8 +238,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox6" checked>
+                                            <label for="img_checkbox6">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -218,8 +257,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox5" checked>
+                                            <label for="img_checkbox5">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -233,8 +276,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox4" checked>
+                                            <label for="img_checkbox4">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -248,8 +295,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox3" checked>
+                                            <label for="img_checkbox3">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -263,8 +314,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox2" checked>
+                                            <label for="img_checkbox2">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -278,8 +333,12 @@
                                     <td class="dnone-360">14,000회</td>
                                     <td class="dnone-586">6,000회</td>
                                     <td>
-                                        <div class="app-stat suc">
-                                            등록완료
+                                        <div class="ad-approval">
+                                            <input type="checkbox" id="img_checkbox1" checked>
+                                            <label for="img_checkbox1">
+                                              <span></span>
+                                              <p>승인</p>
+                                            </label>
                                         </div>
                                     </td>
                                 </tr>
@@ -290,6 +349,7 @@
             </div>
 
         </div>
+
         <!-- Modal -->
         
         <div class="modal fade" id="ad-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -367,9 +427,6 @@
                 </div>
             </div>
         </div>
-                
-  
-  
     </section>
 
     <!-- bootstrap -->
