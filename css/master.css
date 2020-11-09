@@ -2899,6 +2899,9 @@ section>.login_content{
     .col-lg-6{
         padding: 0;
     }
+    .mileage .row .col-lg-6{
+        padding: 0 15px;
+    }
 }
 
 @media(max-width:1130px){
@@ -3585,7 +3588,9 @@ section>.login_content{
     .cash-sub p{
         margin-bottom: 1.5em;
     }
-    
+    .mileage .row .col-lg-6{
+        padding: 0 15px;
+    }
 }
 
 

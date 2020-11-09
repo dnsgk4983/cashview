@@ -129,16 +129,25 @@
                 <div class="row">
                     <div class="col-lg-12 col-12 file">
                         <p>광고 파일</p>
-                        <div class="row">
-                            <div class="col-lg-6 col-6">
-                                <input type="text" placeholder="엄청난 광고.mp4" readonly>
-                            </div>
-                            <div class="col-lg-6 col-6 text-right">
-                                <button type="submit" class="file-btn">
-                                    파일찾기
-                                </button>
-                            </div>
+                        <div class="filebox flex-box">
+                            <input class="upload-name" value="파일경로" disabled="disabled">
+                            <label for="ex_filename">파일찾기</label>
+                            <input type="file" id="ex_filename" class="upload-hidden">
                         </div>
+                        <script>
+                            var fileTarget = $('.filebox .upload-hidden');
+    
+                            fileTarget.on('change', function(){
+                                if(window.FileReader){
+                                    var filename = $(this)[0].files[0].name;
+                                } else {
+                                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                                }
+    
+                                $(this).siblings('.upload-name').val(filename);
+                            });
+    
+                        </script>
                         <div class="col-lg-12 col-12 text-right file-icon">
                             <div class="flex-end">
                                 <div class="check_wrap">
